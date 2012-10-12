@@ -1,0 +1,110 @@
+{# app/Resources/views/frontend.html.twig #}
+{% extends '::base.html.twig' %}
+{% block stylesheets %}
+<link href="{{ asset('bundles/producto/css/normalizar.css') }}"
+rel="stylesheet" type="text/css" />
+<link href="{{ asset('bundles/producto/css/frontend.css') }}"
+rel="stylesheet" type="text/css" />
+
+{% endblock %}
+
+{% block body %}
+<header>
+<div id="topheader">
+<img class="logo" alt="Logo" src="{{ asset('bundles/producto/images/logotop.png') }}">
+{# <img class="slogan" alt="Logo" src="{{ asset('bundles/producto/images/vida sanaII.png') }}"> #}
+
+</div>
+<div id="bottomheader">
+<nav id="principal">
+<ul>
+  <li><a href="#">Nosotros ></a>
+     <ul>
+      <li><a href="{{ path('paginas_estaticas', { 'pagina': 'historia' })}}">Historia</a></li>
+      <li><a href="{{ path('paginas_estaticas', { 'pagina': 'vision' })}}">Mision y Vision</a></li>
+      <li><a href="{{ path('paginas_estaticas', { 'pagina': 'calidad' })}}">Politica de Calidad</a></li>
+      <li><a href="{{ path('paginas_estaticas', { 'pagina': 'premios' })}}">Premios Otorgados</a></li>
+      <li><a href="{{ path('paginas_estaticas', { 'pagina': 'certificados' })}}">Certificados</a></li>
+      <li><a href="{{ path('paginas_estaticas', { 'pagina': 'servicios' })}}">Servicios</a></li>
+   </ul>
+  </li>
+  <li>|</li>
+  <li> Productos > </li>
+  <li>|</li>
+  <li> Publicaciones </li>
+  <li>|</li>
+  <li><a href="{{path('paginas_estaticas', { 'pagina': 'atencion-al-cliente' })}}">Atención al Cliente</a></li>
+</ul>
+</nav>
+</div> 
+</header>
+<article>
+{% block article %}{% endblock %}
+</article>
+<aside>
+<section id="noticias">
+ <h4>Noticias</h4> 
+</section>
+<section id="eventos">
+ <h4>Eventos</h4> 
+</section>
+<section id="distribuidores">
+ <h4>Distribuidores</h4>
+</section>
+<section id="proveedores">
+ <h4>Proveedores</h4> 
+</section>
+</aside>
+<footer>
+<div id="topfooter">
+</div>
+<div id="bottomfooter">
+<div id="subfooterp">
+<nav id="footer">
+<ul>
+
+<li><a href="{{ path('paginas_estaticas', { 'pagina': 'inicio' })}}">Inicio</a></li>
+<li>|</li>
+<li><a href="{{ path('paginas_estaticas', { 'pagina': 'mapa' })}}">Mapa del sitio</a></li>
+<li>|</li>
+<li><a href="{{ path('paginas_estaticas', { 'pagina': 'seguridad' })}}">Política de Seguridad</a></li>
+<li>|</li>
+<li><a href="{{ path('paginas_estaticas', { 'pagina': 'legal' })}}">Declaración Legal</a></li>
+
+</ul>
+</nav>
+
+</div>
+<div id="subfooterm">
+<ul>
+<li> <a href="{{ path('paginas_estaticas', {'pagina': 'historia' })}}">HISTORIA <img src="{{ asset('bundles/producto/images/reloj-foot.png') }}"></a>
+</li>
+<li> <a href="{{ path('paginas_estaticas', {'pagina': 'vision' })}}">VISION Y MISION <img src="{{ asset('bundles/producto/images/ojo-foot.png') }}"></a>
+</li>
+<li> <a href="{{ path('paginas_estaticas', {'pagina': 'calidad' })}}">POLITICA DE CALIDAD <img src="{{ asset('bundles/producto/images/checked-foot.png') }}"></a>
+</li>
+</ul>
+<ul>
+<li> <a href="{{ path('paginas_estaticas', {'pagina': 'premios' })}}">PREMIOS <img src="{{ asset('bundles/producto/images/medalla-foot.png') }}"></a>
+</li>
+<li> <a href="{{ path('paginas_estaticas', {'pagina': 'certificados' })}}">CERTIFICADOS <img src="{{ asset('bundles/producto/images/pluma-foot.png') }}"></a>
+</li>
+<li> <a href="{{ path('paginas_estaticas', {'pagina': 'servicios' })}}">SERVICIOS <img src="{{ asset('bundles/producto/images/maleta-foot.png') }}"></a>
+</li>
+</ul>
+<ul>
+<li> <a href="{{ path('paginas_estaticas', {'pagina': 'productos' })}}">PRODUCTOS <img src="{{ asset('bundles/producto/images/carrito-foot.png') }}"></a>
+</li>
+<li> <a href="{{ path('paginas_estaticas', {'pagina': 'atencion-al-cliente' })}}">CONTACTENOS <img src="{{ asset('bundles/producto/images/carta-foot.png') }}"></a>
+</li>
+<li> <a href="{{ path('paginas_estaticas', {'pagina': 'atencion-al-cliente' })}}">ENCUENTRENOS <img src="{{ asset('bundles/producto/images/alfiler-foot.png') }}"></a>
+</li>
+</ul>
+<img id="logobottom"alt="Logo" src="{{ asset('bundles/producto/images/logobottomy.png') }}">
+</div>
+<div id="subfooterb">
+<span><small>&copy; {{ 'now' | date('Y') }} -DALMER S.A.</small></span>
+</div>
+</div>
+</footer>
+{% endblock %}

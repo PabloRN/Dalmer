@@ -1,0 +1,18 @@
+# app/config/security.yml
+security:
+    firewalls:
+        frontend:
+            pattern: ^/
+            anonymous: ~
+            form_login:
+                login_path: /usuario/login
+                check_path: /usuario/login_check
+    access_control:
+        - { path: ^/usuario/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/usuario/registro, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/historia, roles: ROLE_USUARIO }
+    providers:
+        usuarios:
+            entity: { class: Dalmer\UsuarioBundle\Entity\Usuario, property: email }
+    encoders:
+        Dalmer\UsuarioBundle\Entity\Usuario: { algorithm: sha512, iterations: 10 }

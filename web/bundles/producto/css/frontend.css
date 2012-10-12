@@ -1,0 +1,354 @@
+body {
+background: none repeat scroll 0 0 #e6e2df;
+font-family: "Myriad Pro", "Helvetica neue", Helvetica, Arial, sans-serif;
+font-size: 15px;
+}
+#contenedor {
+background: none repeat scroll 0 0 #fff;
+box-shadow: 0 1px 5px #444;
+margin: 1em auto;
+width: 960px;
+}
+
+a:focus {
+}
+/*p.primero:first-letter {
+font-weight: bold;
+font-size: 1.5em;
+}*/
+p {
+font-family: "Myriad Pro", "Helvetica neue", Helvetica, Arial, sans-serif;
+color: #333;
+text-align: justify;
+}
+ul li {
+list-style-type: circle;
+}
+#title {
+width: 100%; 
+height: 32px;
+border-bottom: 2px solid #00a651; 
+position: relative;
+margin-bottom: 20px;
+}
+h2 {
+color: #00a651;
+font-size: 20px;
+font-family: "Myriad Pro", sans-serif;
+font-weight: bold;
+font-style: normal;
+float: left;
+display: block;
+line-height: 0;
+
+}
+#title img.title {
+display: block;
+float: right;
+position: relative;
+}
+h3 {
+color: #00a651;
+font-size: 18px;
+font-family: "Myriad Pro", sans-serif;
+font-weight: bold;
+display: inline;
+margin-right: 5px;
+}
+header {
+background: none repeat scroll 0 0 #fff;
+/*border: 1px solid #00a651;*/
+height: 163px;
+/*overflow: hidden;*/
+
+}
+header > #topheader {
+height: 115px;
+padding: 5px;
+}
+#topheader > img.logo{
+z-index: 50;
+position: relative;
+top: 65px;
+left: 80px;
+}
+#topheader > img.slogan{
+
+position: relative;
+top: -15%;
+left: 70px;
+}
+#topheader {
+background: #fff url('images/vida sanaII.png') no-repeat left top;
+}
+header > #bottomheader {
+height: 35px;
+padding: 2px;
+background: none repeat scroll 0 0 #00a651;
+}
+nav#principal {
+font-family: "Myriad Pro", Verdana, Helvetica, sans-serif;
+font-size: 18px;
+font-weight:400;
+color: #fff;
+text-shadow: 1px 1px 1px #333;
+
+}
+nav#principal ul {
+list-style: none;
+position: relative;
+left: 220px;
+}
+nav#principal ul li {
+float: left;
+1line-height: 60px;
+margin:5px 2px;
+padding: 0 2px;
+list-style-type: none;
+}
+nav#principal ul li ul {
+position: absolute;
+left:0;
+top: 35px;
+display: none;
+z-index: 50;
+-webkit-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.54);
+-moz-box-shadow:    0px 3px 5px rgba(50, 50, 50, 0.54);
+box-shadow:         0px 3px 5px rgba(50, 50, 50, 0.54);
+}
+nav#principal ul li ul li {
+clear: both;
+display: block;
+width: 100%;
+/*padding: 5px 0;*/
+margin: 0;
+padding: 0;
+}
+nav#principal ul li a {
+display: block;
+text-decoration: none;
+font-family: "Myriad Pro", Verdana, Helvetica, sans-serif;
+font-size: 18px;
+font-weight: 400;
+color: #fff;
+text-shadow: 1px 1px 1px #333;
+height: 30px;
+
+}
+nav#principal ul li a:hover {
+
+text-shadow: 2px 2px 1px #333;
+}
+/*nav#principal ul li a:active{
+cursor: default;
+} */
+nav#principal ul li:hover ul {
+display: block;
+float: left;
+border: 1px solid #00a651;
+background-color: rgba(0, 166, 81, 0.8);
+text-shadow: 1px 1px 1px #333;
+border-radius: 0 0 3px 3px;
+padding: 0;
+
+}
+nav#principal ul li:hover ul li a{
+display: block;
+font-family: "Myriad Pro", sans-serif;
+font-size: 17px;
+font-weight: 100;
+width: 100%;
+vertical-align: central;
+padding: .3em .4em 0 .4em;
+}
+nav#principal ul li ul li:hover{
+background-color: rgba(0, 166, 81, 0.3);
+}
+#contenedor {
+
+overflow: hidden;
+}
+#contenedor > article {
+min-height: 400px;
+float: left;
+padding: 100px 92px;
+width: 536px;
+line-height: 1.3;
+}
+#contenedor > article > section {
+width: auto;
+clear: both;
+
+}
+aside {
+border: 2px solid #00a651;
+border-top-width: 0;
+border-right-width: 0;
+float: right;
+padding: 10px;
+width: 218px;
+min-height: 400px;
+overflow: hidden;
+padding-bottom: 32767px;
+margin-bottom: -32767px;
+overflow: hidden;
+}
+aside h4 {
+text-align: center;
+color: #fff;
+font-family: "Myriad Pro", sans-serif;
+font-size: 15px;
+text-shadow: 1px 1px 1px #333;
+background-color: #00a651;
+border-radius: 3px;
+font-weight: 100;
+padding: 2px 0;
+}
+footer {
+height: auto;
+color: #fff;
+clear: both;
+}
+footer > #topfooter{
+height: 61px;
+background: url(images/relvaIII.png) repeat-x 0 0 scroll;
+}
+footer > #bottomfooter {
+height: auto;
+color:#ffffff;
+background: none repeat scroll 0 0 #00a651;
+overflow: hidden;
+z-index: 50;
+}
+img#logobottom {
+float:right;
+margin: 10px;
+}
+nav#footer {
+font-family: "Myriad Pro", Verdana, Helvetica, sans-serif;
+font-size: 16px;
+font-weight:100;
+color: #fff;
+position: relative;
+left: 230px;
+margin: 0 auto;
+
+}
+nav#footer ul {
+list-style: none;
+
+}
+nav#footer ul li {
+float: left;
+1line-height: 60px;
+margin:8px 5px;
+padding: 0;
+position: relative;
+list-style-type: none;
+}
+nav#footer ul li a {
+text-decoration: none;
+font-family: "Myriad Pro", "Helvetica neue", Helvetica, Arial, sans-serif;
+font-size: 17px;
+font-weight: 100;
+color: #ffc;
+font-style: normal;
+}
+
+#subfooterb span {
+color: #FFFFCC;
+margin-left: 400px;
+position: relative;
+top: 20%;
+}
+#subfooterp {
+height: 43px;
+}
+#subfooterm{
+height: 120px;
+border-top: 1px dotted #00a651;
+border-bottom: 1px dotted #00a651;
+box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.3), 0 0 1px 0 rgba(0, 0, 0, 0.3) inset;
+}
+#subfooterm a{
+color: #ffc;
+font-weight: normal;
+text-decoration: none;
+}
+#subfooterm img {
+border: 0 none;
+margin-left: 5px;
+vertical-align: bottom;
+}
+#subfooterb{
+height: 37px;
+}
+#subfooterm ul {
+float: left;
+
+margin: 22px 0 0 80px;
+padding: 0;
+}
+#subfooterm ul li {
+margin: 0 0 12px 0;
+color: #333;
+line-height: 1em;
+list-style-type:none;
+}
+#subfooterm ul li{
+list-style-type:none;
+padding: 0 0 0 45px;
+position: relative;
+}
+
+#subfooterm ul li:before{
+/*fill it with a blank space*/
+content: "\00a0";
+ 
+/*make it a block element*/
+display: block;
+ 
+/*adding an 8px round border to a 0x0 element creates an 8px circle*/
+border: solid 8px #ffc;
+border-radius: 8px;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+height: 0;
+width: 0;
+ 
+/*Now position it on the left of the list item, and center it vertically
+(so that it will work with multiple line list-items)*/
+position: absolute;
+left: 7px;
+top: 40%;
+margin-top: -8px;
+}
+#subfooterm ul li:after{
+/*Add another block-level blank space*/
+content: "\00a0";
+display:block;
+ 
+/*Make it a small rectangle so the border will create an L-shape*/
+width: 2px;
+height: 5px;
+ 
+/*Add a white border on the bottom and left, creating that 'L' */
+border: solid #00A651;
+border-width: 0 2px 2px 0;
+
+/*Position it on top of the circle*/
+position: absolute;
+left: 14px;
+top: 40%;
+margin-top: -4px;
+ 
+/*Rotate the L 45 degrees to turn it into a checkmark*/
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+}
+/*#subfooters  {
+  background-image: url("images/logobottom.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}*/

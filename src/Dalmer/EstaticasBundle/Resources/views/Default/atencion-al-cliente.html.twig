@@ -1,0 +1,34 @@
+{% extends '::frontend.html.twig' %}
+{% block stylesheets %}
+{{ parent() }}
+<link href="{{ asset('bundles/estaticas/css/atencion.css') }}"
+rel="stylesheet" type="text/css"/>
+{% endblock %}
+{% block title %}Atención al cliente{% endblock %}
+{% block id 'atencion' %}
+{% block article %}
+<section id="contactenos">
+<div id="contactos">
+<address>
+<hgroup>
+<div id="title">
+<h2>Contáctenos  </h2>
+<img class="title" alt="icono carta" src="{{ asset('bundles/estaticas/images/carta.png') }}">
+</div>
+<p><h3>Teléfonos:</h3><span>(537) 2085835, (537) 2085236 EXT 222</span></p>
+<p><h3>Fax:</h3><span>(537) 2085835, (537) 2085236 EXT 222</span</p>
+<p><h3>Mail:</h3><span>dalmer@enet.cu</span</p>
+</hgroup>
+</div>
+<div id="encuentranos">
+<div id="title">
+<h2>Encuentrenos</h2>
+<img class="title" alt="icono carta" src="{{ asset('bundles/estaticas/images/alfiler.png') }}">
+</div>
+<p>Ave. 25 No.  15819  e/ 158 y 190, Reparto Cubanacán CP. 6990, Municipio Playa, Habana, Cuba.</p>
+<img class="mapa" alt="Mapa localizacion dalmer" src="{{ asset('bundles/estaticas/images/mapa.png') }}">
+</div>
+</address>
+
+</section>
+{% endblock %}

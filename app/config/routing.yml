@@ -1,0 +1,14 @@
+ProductoBundle:
+    resource: "@ProductoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+EstaticasBundle:
+    resource: "@EstaticasBundle/Resources/config/routing.yml"
+    prefix:   /
+UsuarioBundle:
+    resource: "@UsuarioBundle/Resources/config/routing.yml"
+    prefix:   /usuario
+# Internal routing configuration to handle ESI
+#_internal:
+#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#   prefix:   /_internal

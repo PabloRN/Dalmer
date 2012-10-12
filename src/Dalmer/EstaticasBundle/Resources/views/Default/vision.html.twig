@@ -1,0 +1,21 @@
+{% extends '::frontend.html.twig' %}
+{% block stylesheets %}
+{{ parent() }}
+<link href="{{ asset('bundles/estaticas/css/vision.css') }}"
+rel="stylesheet" type="text/css"/>
+{% endblock %}
+{% block title %}Visión y Misión{% endblock %}
+{% block id 'vision' %}
+{% block article %}
+<div id="title">
+<h2>Visión y Misión</h2>
+<img class="title" alt="icono carta" src="{{ asset('bundles/estaticas/images/ojo.png') }}">
+</div>
+<p class="primero">Laboratorios Dalmer S.A. es una sociedad mercantil de capital 100% cubano constituida el 25 de diciembre de 1991 al amparo de la legislación cubana.</p> 
+
+<h3>Visión</h3>
+<p>“Comercializar productos farmacéuticos y/o complementos nutricionales,  vacunas, diagnosticadores, cosméticos,  equipos para diagnósticos y tratamientos, con fines médicos, sociales e industriales, y sus partes, así como los software relacionados, dispositivos y productos naturales o sintéticos para  implantes, que cumplan una función social determinada en función de su uso y que a la par puedan constituir fuentes de ingreso en moneda nacional y/o extranjera, con la obtención de utilidades para la firma.”
+<h3>Misión</h3></p>
+<p>"Ser una comercializadora que se distinga por promover estilos de vida sanos en el marco de la prevención de salud e insertar sus productos en ese ámbito y por contar con la confianza de proveedores, clientes y consumidores finales; así como por su eficiencia empresarial, preparación y motivación de sus recursos humanos, trabajo coordinado y comunicación idónea y apego a los valores políticos y éticos de nuestra sociedad".</p>
+{% endblock %}
+

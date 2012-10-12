@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Bienvenido a Dalmer.s.a{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+		<script src="{{ asset('bundles/producto/js/jquery-1.7.2.min.js') }}"></script>
+		<script src="{{ asset('bundles/producto/js/jquery-ui-1.8.20.custom.min.js') }}"></script>
+    </head>
+    <body id="{% block id '' %}"><div id="contenedor">
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+</div></body>
+</html>
