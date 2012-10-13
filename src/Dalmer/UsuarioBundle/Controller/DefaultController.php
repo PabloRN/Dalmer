@@ -21,4 +21,17 @@ return $this->render('UsuarioBundle:Default:login.html.twig', array(
 'error' => $error
 ));
 }
+public function cajaLoginAction()
+{
+$peticion = $this->getRequest();
+$sesion = $peticion->getSession();
+$error = $peticion->attributes->get(
+SecurityContext::AUTHENTICATION_ERROR,
+$sesion->get(SecurityContext::AUTHENTICATION_ERROR)
+);
+return $this->render('UsuarioBundle:Default:cajaLogin.html.twig', array(
+'last_username' => $sesion->get(SecurityContext::LAST_USERNAME),
+'error' => $error
+));
+}
 }
