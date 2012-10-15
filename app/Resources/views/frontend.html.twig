@@ -14,7 +14,11 @@ rel="stylesheet" type="text/css" />
 <img class="logo" alt="Logo" src="{{ asset('bundles/producto/images/logotop.png') }}">
 {# <img class="slogan" alt="Logo" src="{{ asset('bundles/producto/images/vida sanaII.png') }}"> #}
 <section id="login">
+{% if is_granted('ROLE_USUARIO') %}
+<p> lolo.lo</p>
+{% else %}
 {% render 'UsuarioBundle:Default:cajaLogin' %}
+{% endif %}
 </section>
 </div>
 <div id="bottomheader">

@@ -7,6 +7,9 @@ security:
             form_login:
                 login_path: /usuario/login
                 check_path: /usuario/login_check
+            remember_me:
+                key: corey1
+                lifetime: 3600
     access_control:
         - { path: ^/usuario/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/usuario/registro, roles: IS_AUTHENTICATED_ANONYMOUSLY }
@@ -15,4 +18,5 @@ security:
         usuarios:
             entity: { class: Dalmer\UsuarioBundle\Entity\Usuario, property: email }
     encoders:
-        Dalmer\UsuarioBundle\Entity\Usuario: { algorithm: sha512, iterations: 10 }
+        Dalmer\UsuarioBundle\Entity\Usuario: plaintext
+#Dalmer\UsuarioBundle\Entity\Usuario: { algorithm: sha512, iterations: 10 }

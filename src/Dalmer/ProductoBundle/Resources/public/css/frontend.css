@@ -83,13 +83,43 @@ background: #fff url('images/vida sanaII.png') no-repeat left top;
 }
 #topheader > #login {
 float: right;
-width: 200px;
+width: 181px;
+margin-right:40px;
 }
 #topheader > #login  > form input, #topheader > #login  > form label{
 float: left;
 margin-top: 2px;
 border-radius: 3px 3px 3px 3px;
 display:inline;
+}
+#topheader > #login  > form label{
+color: #00A651;
+font-weight: bold;
+}
+#topheader > #login  > form input{
+border: 1px solid #00a651;
+padding: 2px;
+}
+#topheader > #login  > form input.submit{
+margin-top: 5px;
+background-color: #00A651;
+border-radius: 3px 3px 3px 3px;
+color: #FFFFFF;
+font-family: "Myriad Pro",sans-serif;
+font-size: 15px;
+font-weight: 100;
+padding: 2px 0;
+text-align: center;
+/*text-shadow: 1px 1px 1px #333333;*/
+width: 50px; 
+padding: 0;
+float: left;
+}
+#topheader > #login  > form input#no_cerrar{
+margin: 10px 0 0 6px;
+}
+#topheader > #login  > form label.remember {
+margin: 6px 0 0 4px;
 }
 header > #bottomheader {
 height: 35px;

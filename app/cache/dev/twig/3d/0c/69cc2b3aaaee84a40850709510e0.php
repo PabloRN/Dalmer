@@ -62,12 +62,14 @@ value=\"";
         echo "\" />
 <label for=\"password\">Contraseña:</label>
 <input type=\"password\" id=\"password\" name=\"_password\" />
+<input type=\"checkbox\" id=\"no_cerrar\" name=\"_remember_me\" checked />
+<label for=\"no_cerrar\">Recordarme</label>
 <input type=\"submit\" name=\"login\" value=\"Acceder\" />
 </form>
 ";
     }
 
-    // line 18
+    // line 20
     public function block_aside($context, array $blocks = array())
     {
     }
@@ -84,6 +86,6 @@ value=\"";
 
     public function getDebugInfo()
     {
-        return array (  69 => 18,  59 => 12,  52 => 9,  46 => 7,  44 => 6,  41 => 5,  35 => 4,  29 => 3,);
+        return array (  71 => 20,  59 => 12,  52 => 9,  46 => 7,  44 => 6,  41 => 5,  35 => 4,  29 => 3,);
     }
 }
