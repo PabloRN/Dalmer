@@ -13,7 +13,7 @@ security:
     access_control:
         - { path: ^/usuario/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/usuario/registro, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/historia, roles: ROLE_USUARIO }
+        #- { path: ^/historia, roles: ROLE_USUARIO }
     providers:
         usuarios:
             entity: { class: Dalmer\UsuarioBundle\Entity\Usuario, property: email }

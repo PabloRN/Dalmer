@@ -25,6 +25,7 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
        '_configurator_final' => true,
        'ProductoBundle_homepage' => true,
        'paginas_estaticas' => true,
+       'publicaciones_estaticas' => true,
        'usuario_login' => true,
        'usuario_login_check' => true,
        'usuario_logout' => true,
@@ -109,6 +110,11 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
     private function getpaginas_estaticasRouteInfo()
     {
         return array(array (  0 => 'pagina',), array (  '_controller' => 'Dalmer\\EstaticasBundle\\Controller\\DefaultController::estaticaAction',), array (), array (  0 =>   array (    0 => 'variable',    1 => '/',    2 => '[^/]+?',    3 => 'pagina',  ),));
+    }
+
+    private function getpublicaciones_estaticasRouteInfo()
+    {
+        return array(array (  0 => 'producto',), array (  '_controller' => 'Dalmer\\EstaticasBundle\\Controller\\DefaultController::publicacionAction',), array (), array (  0 =>   array (    0 => 'variable',    1 => '/',    2 => '[^/]+?',    3 => 'producto',  ),  1 =>   array (    0 => 'text',    1 => '/publicaciones',  ),));
     }
 
     private function getusuario_loginRouteInfo()

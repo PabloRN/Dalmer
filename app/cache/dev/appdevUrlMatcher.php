@@ -94,6 +94,11 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Dalmer\\EstaticasBundle\\Controller\\DefaultController::estaticaAction',)), array('_route' => 'paginas_estaticas'));
         }
 
+        // publicaciones_estaticas
+        if (0 === strpos($pathinfo, '/publicaciones') && preg_match('#^/publicaciones/(?P<producto>[^/]+?)$#s', $pathinfo, $matches)) {
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Dalmer\\EstaticasBundle\\Controller\\DefaultController::publicacionAction',)), array('_route' => 'publicaciones_estaticas'));
+        }
+
         if (0 === strpos($pathinfo, '/usuario')) {
             // usuario_login
             if ($pathinfo === '/usuario/login') {

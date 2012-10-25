@@ -1,3 +1,6 @@
 paginas_estaticas:
   pattern: /{pagina}
   defaults: { _controller:EstaticasBundle:Default:estatica }
+publicaciones_estaticas:
+  pattern: /publicaciones/{producto}
+  defaults: { _controller:EstaticasBundle:Default:publicacion }

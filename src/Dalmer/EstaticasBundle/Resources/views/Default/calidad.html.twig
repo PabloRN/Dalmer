@@ -1,0 +1,27 @@
+{% extends '::frontend.html.twig' %}
+{% block stylesheets %}
+{{ parent() }}
+<link href="{{ asset('bundles/estaticas/css/calidad.css') }}"
+rel="stylesheet" type="text/css"/>
+{% endblock %}
+{% block title %}Política de Calidad{% endblock %}
+{% block id 'calidad' %}
+{% block article %}
+<div id="title">
+<h2>Política de calidad</h2>
+<img class="title" alt="icono checked" src="{{ asset('bundles/estaticas/images/checked.png') }}">
+</div>
+<p>
+<ul class="calidad">
+<li>El cumplimiento de los requisitos y regulaciones establecidos por el Centro Estatal del Control de Medicamentos (CECMED) en lo relativo a los medicamentos que comercialice, lo cual atañe a la obtención y renovación de Registros que permitan su venta, Certificados de Libre Venta y en la actualidad a la solicitud y renovación de las Licencias correspondientes a Distribución y Exportación, las cuales son armónicas con su objeto social.</li>
+<li>El cumplimiento de los requisitos y regulaciones establecidos por el Instituto de Higiene y Control de los Alimentos en lo relativo a los suplementos nutricionales, nutracéuticos o cualquier otra variante dentro del ámbito de los productos alimentarios que comercialice, lo cual atañe a la obtención y renovación de Registros y Permiso para la Venta, las cuales son armónicas con su objeto social.</li>
+<li>El cumplimiento de cualquier otro requisito que en lo concerniente a lo anterior emane del Buró Regulador para la Protección de la Salud, perteneciente al MINSAP, máximo nivel encargado del control y la vigilancia sanitaria de los productos que puedan tener influencia sobre la salud humana en nuestro país.</li>
+<li>El cumplimiento de los Procedimientos Normalizados de Trabajo relacionados con las actividades que realiza.</li>
+<li>La aplicación de un Programa de Aseguramiento de la Calidad diseñado en función de dar cumplimiento a lo establecido en las Buenas Prácticas de Distribución y las Directrices para el almacenamiento de medicamentos y suplementos alimentarios establecidas por la Organización Mundial de la Salud (OMS) y diversas Agencias Reguladoras a nivel internacional.</li>
+<li>La eliminación de los errores en el trabajo mediante la participación consciente de todos los trabajadores.</li>
+El cumplimiento de la Política de Calidad de Dalmer debe estar en consecuencia armónica con el objetivo de garantizar los resultados al menor costo y plazo posible y con la mejor calidad, lo que debe permitir la adecuada comercialización de los productos.
+</ul>
+</p> 
+
+{% endblock %}
+

@@ -12,4 +12,8 @@ class DefaultController extends Controller
     {
         return $this->render('EstaticasBundle:Default:'.$pagina.'.html.twig');
     }
+	public function publicacionAction($producto)
+	{
+	    return $this->render('EstaticasBundle:Default:'.$producto.'.html.twig');
+	}
 }

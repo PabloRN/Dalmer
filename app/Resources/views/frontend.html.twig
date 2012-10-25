@@ -14,18 +14,18 @@ rel="stylesheet" type="text/css" />
 <img class="logo" alt="Logo" src="{{ asset('bundles/producto/images/logotop.png') }}">
 {# <img class="slogan" alt="Logo" src="{{ asset('bundles/producto/images/vida sanaII.png') }}"> #}
 <section id="login">
-{% if is_granted('ROLE_USUARIO') %}
-<p> lolo.lo</p>
-{% else %}
+{# if is_granted('ROLE_USUARIO') #}
+{# <p> lolo.lo</p> #}
+{# else #}
 {% render 'UsuarioBundle:Default:cajaLogin' %}
-{% endif %}
+{# endif #}
 </section>
 </div>
 <div id="bottomheader">
 <nav id="principal">
 <ul>
   <li><a href="#">Nosotros ></a>
-     <ul>
+     <ul class="nosotros">
       <li><a href="{{ path('paginas_estaticas', { 'pagina': 'historia' })}}">Historia</a></li>
       <li><a href="{{ path('paginas_estaticas', { 'pagina': 'vision' })}}">Mision y Vision</a></li>
       <li><a href="{{ path('paginas_estaticas', { 'pagina': 'calidad' })}}">Politica de Calidad</a></li>
@@ -37,7 +37,13 @@ rel="stylesheet" type="text/css" />
   <li>|</li>
   <li> Productos > </li>
   <li>|</li>
-  <li> Publicaciones </li>
+  <li> <a href="#"> Publicaciones ></a>
+  <ul class="publicaciones">
+  <li><a href="{{ path('publicaciones_estaticas', { 'producto': 'policosanol' })}}">Proyecto Policosanol</a></li>
+  <li><a href="{{ path('paginas_estaticas', { 'pagina': 'pub_d002' })}}">Proyecto D002</a></li>
+  <li><a href="{{ path('paginas_estaticas', { 'pagina': 'pub_d003' })}}">Proyecto D003</a></li>
+  </ul>
+  </li>
   <li>|</li>
   <li><a href="{{path('paginas_estaticas', { 'pagina': 'atencion-al-cliente' })}}">Atención al Cliente</a></li>
 </ul>
