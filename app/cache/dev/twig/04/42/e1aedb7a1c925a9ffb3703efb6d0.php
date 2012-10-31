@@ -93,28 +93,65 @@ rel=\"stylesheet\" type=\"text/css\" />
         echo "\">Servicios</a></li>
    </ul>
   </li>
-  <li>|</li>
-  <li> Productos > </li>
-  <li>|</li>
+  <li class=\"separador\"></li>
+  <li><a href=\"#\">Productos ></a>
+     <ul class=\"productos\">
+\t <li><a href=\"#\">Productos naturales ></a>
+\t <ul class=\"subproductos\">
+      <li><a href=\"";
+        // line 42
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("productos_estaticas_naturales", array("producto" => "policosanol")), "html", null, true);
+        echo "\">Policosanol</a></li>
+\t   <li><a href=\"";
+        // line 43
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("productos_estaticas_naturales", array("producto" => "prevenox")), "html", null, true);
+        echo "\">Prevenox</a></li>
+      <li><a href=\"";
+        // line 44
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("productos_estaticas_naturales", array("producto" => "abexol")), "html", null, true);
+        echo "\">Abexol</a></li>
+      <li><a href=\"";
+        // line 45
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("productos_estaticas_naturales", array("producto" => "d003")), "html", null, true);
+        echo "\">Vasoactol</a></li>
+      <li><a href=\"";
+        // line 46
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("productos_estaticas_naturales", array("producto" => "palmex")), "html", null, true);
+        echo "\">Palmex</a></li>
+     
+     </ul>
+\t </li>
+\t <li><a href=\"#\">Implantes médicos ></a>
+\t <ul class=\"subproductos\">
+\t <li><a href=\"";
+        // line 52
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("productos_estaticas_implantes", array("producto" => "coralina")), "html", null, true);
+        echo "\">Coralina</a></li>
+\t 
+\t </ul>
+\t </li>
+   </ul>
+  </li>
+  <li class=\"separador\"></li>
   <li> <a href=\"#\"> Publicaciones ></a>
   <ul class=\"publicaciones\">
   <li><a href=\"";
-        // line 42
+        // line 61
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("publicaciones_estaticas", array("producto" => "policosanol")), "html", null, true);
         echo "\">Proyecto Policosanol</a></li>
   <li><a href=\"";
-        // line 43
+        // line 62
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("paginas_estaticas", array("pagina" => "pub_d002")), "html", null, true);
         echo "\">Proyecto D002</a></li>
   <li><a href=\"";
-        // line 44
+        // line 63
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("paginas_estaticas", array("pagina" => "pub_d003")), "html", null, true);
         echo "\">Proyecto D003</a></li>
   </ul>
   </li>
-  <li>|</li>
+  <li class=\"separador\"></li>
   <li><a href=\"";
-        // line 48
+        // line 67
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("paginas_estaticas", array("pagina" => "atencion-al-cliente")), "html", null, true);
         echo "\">Atención al Cliente</a></li>
 </ul>
@@ -123,9 +160,9 @@ rel=\"stylesheet\" type=\"text/css\" />
 </header>
 <article>
 ";
-        // line 54
+        // line 73
         $this->displayBlock('article', $context, $blocks);
-        // line 55
+        // line 74
         echo "</article>
 <aside>
 <section id=\"noticias\">
@@ -150,22 +187,22 @@ rel=\"stylesheet\" type=\"text/css\" />
 <ul>
 
 <li><a href=\"";
-        // line 78
+        // line 97
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("paginas_estaticas", array("pagina" => "inicio")), "html", null, true);
         echo "\">Inicio</a></li>
 <li>|</li>
 <li><a href=\"";
-        // line 80
+        // line 99
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("paginas_estaticas", array("pagina" => "mapa")), "html", null, true);
         echo "\">Mapa del sitio</a></li>
 <li>|</li>
 <li><a href=\"";
-        // line 82
+        // line 101
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("paginas_estaticas", array("pagina" => "seguridad")), "html", null, true);
         echo "\">Política de Seguridad</a></li>
 <li>|</li>
 <li><a href=\"";
-        // line 84
+        // line 103
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("paginas_estaticas", array("pagina" => "legal")), "html", null, true);
         echo "\">Declaración Legal</a></li>
 
@@ -176,21 +213,21 @@ rel=\"stylesheet\" type=\"text/css\" />
 <div id=\"subfooterm\">
 <ul>
 <li> <a href=\"";
-        // line 92
+        // line 111
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("paginas_estaticas", array("pagina" => "historia")), "html", null, true);
         echo "\">HISTORIA <img src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/producto/images/reloj-foot.png"), "html", null, true);
         echo "\"></a>
 </li>
 <li> <a href=\"";
-        // line 94
+        // line 113
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("paginas_estaticas", array("pagina" => "vision")), "html", null, true);
         echo "\">VISION Y MISION <img src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/producto/images/ojo-foot.png"), "html", null, true);
         echo "\"></a>
 </li>
 <li> <a href=\"";
-        // line 96
+        // line 115
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("paginas_estaticas", array("pagina" => "calidad")), "html", null, true);
         echo "\">POLITICA DE CALIDAD <img src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/producto/images/checked-foot.png"), "html", null, true);
@@ -199,21 +236,21 @@ rel=\"stylesheet\" type=\"text/css\" />
 </ul>
 <ul>
 <li> <a href=\"";
-        // line 100
+        // line 119
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("paginas_estaticas", array("pagina" => "premios")), "html", null, true);
         echo "\">PREMIOS <img src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/producto/images/medalla-foot.png"), "html", null, true);
         echo "\"></a>
 </li>
 <li> <a href=\"";
-        // line 102
+        // line 121
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("paginas_estaticas", array("pagina" => "certificados")), "html", null, true);
         echo "\">CERTIFICADOS <img src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/producto/images/pluma-foot.png"), "html", null, true);
         echo "\"></a>
 </li>
 <li> <a href=\"";
-        // line 104
+        // line 123
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("paginas_estaticas", array("pagina" => "servicios")), "html", null, true);
         echo "\">SERVICIOS <img src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/producto/images/maleta-foot.png"), "html", null, true);
@@ -222,21 +259,21 @@ rel=\"stylesheet\" type=\"text/css\" />
 </ul>
 <ul>
 <li> <a href=\"";
-        // line 108
+        // line 127
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("paginas_estaticas", array("pagina" => "productos")), "html", null, true);
         echo "\">PRODUCTOS <img src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/producto/images/carrito-foot.png"), "html", null, true);
         echo "\"></a>
 </li>
 <li> <a href=\"";
-        // line 110
+        // line 129
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("paginas_estaticas", array("pagina" => "atencion-al-cliente")), "html", null, true);
         echo "\">CONTACTENOS <img src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/producto/images/carta-foot.png"), "html", null, true);
         echo "\"></a>
 </li>
 <li> <a href=\"";
-        // line 112
+        // line 131
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("paginas_estaticas", array("pagina" => "atencion-al-cliente")), "html", null, true);
         echo "\">ENCUENTRENOS <img src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/producto/images/alfiler-foot.png"), "html", null, true);
@@ -244,13 +281,13 @@ rel=\"stylesheet\" type=\"text/css\" />
 </li>
 </ul>
 <img id=\"logobottom\"alt=\"Logo\" src=\"";
-        // line 115
+        // line 134
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/producto/images/logobottomy.png"), "html", null, true);
         echo "\">
 </div>
 <div id=\"subfooterb\">
 <span><small>&copy; ";
-        // line 118
+        // line 137
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo " -DALMER S.A.</small></span>
 </div>
@@ -259,7 +296,7 @@ rel=\"stylesheet\" type=\"text/css\" />
 ";
     }
 
-    // line 54
+    // line 73
     public function block_article($context, array $blocks = array())
     {
     }
@@ -276,6 +313,6 @@ rel=\"stylesheet\" type=\"text/css\" />
 
     public function getDebugInfo()
     {
-        return array (  261 => 54,  252 => 118,  246 => 115,  238 => 112,  231 => 110,  224 => 108,  215 => 104,  208 => 102,  201 => 100,  192 => 96,  185 => 94,  178 => 92,  167 => 84,  162 => 82,  157 => 80,  152 => 78,  127 => 55,  125 => 54,  116 => 48,  109 => 44,  105 => 43,  101 => 42,  90 => 34,  86 => 33,  82 => 32,  78 => 31,  74 => 30,  70 => 29,  61 => 22,  59 => 20,  56 => 16,  52 => 14,  48 => 12,  45 => 11,  37 => 6,  31 => 4,  28 => 3,);
+        return array (  298 => 73,  289 => 137,  283 => 134,  275 => 131,  268 => 129,  261 => 127,  252 => 123,  245 => 121,  238 => 119,  229 => 115,  222 => 113,  215 => 111,  204 => 103,  199 => 101,  194 => 99,  189 => 97,  164 => 74,  162 => 73,  153 => 67,  146 => 63,  142 => 62,  138 => 61,  126 => 52,  117 => 46,  113 => 45,  109 => 44,  105 => 43,  101 => 42,  90 => 34,  86 => 33,  82 => 32,  78 => 31,  74 => 30,  70 => 29,  61 => 22,  59 => 20,  56 => 16,  52 => 14,  48 => 12,  45 => 11,  37 => 6,  31 => 4,  28 => 3,);
     }
 }

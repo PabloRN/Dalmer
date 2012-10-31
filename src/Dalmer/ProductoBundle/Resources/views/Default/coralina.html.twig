@@ -1,0 +1,18 @@
+{% extends '::frontend.html.twig' %}
+{% block stylesheets %}
+{{ parent() }}
+<link href="{{ asset('bundles/productos/css/policosanol.css') }}"
+rel="stylesheet" type="text/css"/>
+{% endblock %}
+{% block title %}productos/coralina{% endblock %}
+{% block id 'historia' %}
+{% block article %}
+<div id="title">
+<h2>Policosanol (5mg, 10mg, 20mg)</h2>
+<img class="title" alt="icono carta" src="{{ asset('bundles/estaticas/images/reloj.png') }}">
+</div>
+
+{% endblock %}
+
+
+

@@ -134,6 +134,17 @@ color: #fff;
 text-shadow: 1px 1px 1px #333;
 
 }
+nav#principal li.separador{
+
+background-color: #01B159;
+    border-left: 2px solid #018743;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+	margin-top: 8px;
+    width: 1px;
+	padding: 0;
+}
 nav#principal ul {
 list-style: none;
 position: relative;
@@ -154,10 +165,23 @@ display: none;
 z-index: 50;
 -webkit-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.54);
 -moz-box-shadow:    0px 3px 5px rgba(50, 50, 50, 0.54);
-box-shadow:         0px 3px 5px rgba(50, 50, 50, 0.54);
+box-shadow:         0px 2px 4px rgba(50, 50, 50, 0.54);
 }
 nav#principal ul li ul.publicaciones{
 left: 210px;
+}
+nav#principal ul li ul.productos{
+left: 100px;
+}
+nav#principal ul li ul.productos > li ul{
+display: none;
+left: 170px;
+top: 0;
+}
+nav#principal ul li ul.productos li:hover ul.subproductos{
+display: block;
+width: 170px;
+
 }
 nav#principal ul li ul li {
 clear: both;
@@ -180,7 +204,7 @@ height: 30px;
 }
 nav#principal ul li a:hover {
 
-text-shadow: 2px 2px 1px #333;
+/*text-shadow: 2px 2px 1px #333;*/
 }
 /*nav#principal ul li a:active{
 cursor: default;
@@ -191,7 +215,7 @@ float: left;
 border: 1px solid #00a651;
 background-color: rgba(0, 166, 81, 0.8);
 text-shadow: 1px 1px 1px #333;
-border-radius: 0 0 3px 3px;
+border-radius: 0 0 1px 1px;
 padding: 0;
 
 }

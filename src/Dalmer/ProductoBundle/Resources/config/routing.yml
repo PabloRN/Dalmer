@@ -1,3 +1,6 @@
-ProductoBundle_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: ProductoBundle:Default:index }
+productos_estaticas_naturales:
+    pattern:  /productos/naturales/{producto}
+    defaults: { _controller: ProductoBundle:Default:producto }
+productos_estaticas_implantes:
+    pattern:  /productos/implantes/{producto}
+    defaults: { _controller: ProductoBundle:Default:producto }

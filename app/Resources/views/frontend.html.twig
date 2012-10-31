@@ -34,9 +34,28 @@ rel="stylesheet" type="text/css" />
       <li><a href="{{ path('paginas_estaticas', { 'pagina': 'servicios' })}}">Servicios</a></li>
    </ul>
   </li>
-  <li>|</li>
-  <li> Productos > </li>
-  <li>|</li>
+  <li class="separador"></li>
+  <li><a href="#">Productos ></a>
+     <ul class="productos">
+	 <li><a href="#">Productos naturales ></a>
+	 <ul class="subproductos">
+      <li><a href="{{ path('productos_estaticas_naturales', { 'producto': 'policosanol' })}}">Policosanol</a></li>
+	   <li><a href="{{ path('productos_estaticas_naturales', { 'producto': 'prevenox' })}}">Prevenox</a></li>
+      <li><a href="{{ path('productos_estaticas_naturales', { 'producto': 'abexol' })}}">Abexol</a></li>
+      <li><a href="{{ path('productos_estaticas_naturales', { 'producto': 'd003' })}}">Vasoactol</a></li>
+      <li><a href="{{ path('productos_estaticas_naturales', { 'producto': 'palmex' })}}">Palmex</a></li>
+     
+     </ul>
+	 </li>
+	 <li><a href="#">Implantes médicos ></a>
+	 <ul class="subproductos">
+	 <li><a href="{{ path('productos_estaticas_implantes', { 'producto': 'coralina' })}}">Coralina</a></li>
+	 
+	 </ul>
+	 </li>
+   </ul>
+  </li>
+  <li class="separador"></li>
   <li> <a href="#"> Publicaciones ></a>
   <ul class="publicaciones">
   <li><a href="{{ path('publicaciones_estaticas', { 'producto': 'policosanol' })}}">Proyecto Policosanol</a></li>
@@ -44,7 +63,7 @@ rel="stylesheet" type="text/css" />
   <li><a href="{{ path('paginas_estaticas', { 'pagina': 'pub_d003' })}}">Proyecto D003</a></li>
   </ul>
   </li>
-  <li>|</li>
+  <li class="separador"></li>
   <li><a href="{{path('paginas_estaticas', { 'pagina': 'atencion-al-cliente' })}}">Atención al Cliente</a></li>
 </ul>
 </nav>

@@ -1,0 +1,40 @@
+{% extends '::frontend.html.twig' %}
+{% block stylesheets %}
+{{ parent() }}
+<link href="{{ asset('bundles/producto/css/policosanol.css') }}"
+rel="stylesheet" type="text/css"/>
+{% endblock %}
+{% block title %}Productos-abexol{% endblock %}
+{% block id 'prodpol' %}
+{% block article %}
+<div id="title">
+<h2>Abexol</h2>
+<img class="title" alt="icono carrito" src="{{ asset('bundles/producto/images/carrito.png') }}">
+</div>
+<img class="prod" alt="Estuche de policosanol" src="{{ asset('bundles/producto/images/abexol.png') }}">
+<h4 class="producto">Acciones</h4> <p>El ABEXOL ha mostrado reducir el daño inducido por el aumento del estrés oxidativo, reduciendo la oxidación lipídica y proteica mediante el aumento de la respuesta antioxidante del organismo. El ABEXOL protege de los efectos perjudiciales del estrés oxidativo y los radicales libres, condiciones asociadas al proceso de envejecimiento y los estados fisiopatológicos asociados. Además, el ABEXOL previene el daño de la mucosa gástrica inducido por agentes nocivos (medicamentos anti-inflamatorios, etanol, stress) al reducir los procesos oxidativos en la mucosa gástrica y aumentando la producción del mucus gástrico soluble, factor defensivo clave de la mucosa gastroduodenal. El ABEXOL ha mostrado mejorar la percepción de salud en sujetos de edad media y en ancianos
+Los efectos antioxidantes del ABEXOL  han sido demostrados en estudios clínicos y experimentales. 
+</p>
+<h4 class="producto">Descripción</h4>
+<p>El ABEXOL consiste en una mezcla de 6 alcoholes de alto peso molecular purificada de la cera de abejas, de la cual el principal componente es el triacontanol.</p>
+<h4 class="producto">Composición</h4>
+<p>Cada tableta contiene: Mezcla de alcoholes alifáticos de alto peso molecular	50 mg, Excipientes (mg) csp.
+</p>
+<h4 class="producto">Indicaciones</h4>
+<p>El ABEXOL se recomienda como suplemento antioxidante, junto con la dieta diaria, con el objetivo de aumentar la respuesta antioxidante del organismo y reducir el impacto del estrés oxidativo. 
+Además, el ABEXOL consumido con la dieta diaria contribuye a proteger la mucosa gástrica del daño inducido por factores agresivos, particularmente en sujetos de edad media y avanzada. 
+</p>
+<h4 class="producto">Toxicidad y efectos adeversos</h4>
+<p>Los estudios de la toxicidad a corto y largo plazo del ingrediente activo del ABEXOL (toxicidad aguda, subcrónica, y crónica), y los estudios de genotoxicidad y toxicología de la fertilidad y la reproducción, han mostrado ausencia de toxicidad asociada a su uso. Los estudios clínicos realizados han mostrado que el ABEXOL es seguro y bien tolerado. 
+</p>
+<h4 class="producto">Consumo</h4>
+<p>Una o dos tabletas diarias, consumidas con almuerzo y comida. No consumir más de 4 tabletas al día.</p>
+<h4 class="producto">Contraindicaciones</h4>
+<p>Embarazo y lactancia.</p>
+<h4 class="producto">Precausiones</h4>
+<p>No administrar a niños.</p>
+<h4 class="producto">Almacenamiento</h4>
+<p>Puede conservarse a temperatura ambiente.</p>
+<h4 class="producto">Vencimiento</h4>
+<p>Cinco  años después de la fecha de fabricación.</p>
+{% endblock %}

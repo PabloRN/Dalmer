@@ -1,0 +1,13 @@
+img.prod {
+float: left;
+margin: 0 20px 20px 0;
+}
+h4.producto{
+color: #00a651;
+display: inline;
+margin-right: 10px;
+font-size: 16px;
+}
+p {
+text-align: justify;
+}

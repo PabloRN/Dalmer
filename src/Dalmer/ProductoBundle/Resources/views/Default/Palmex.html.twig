@@ -1,0 +1,39 @@
+{% extends '::frontend.html.twig' %}
+{% block stylesheets %}
+{{ parent() }}
+<link href="{{ asset('bundles/producto/css/policosanol.css') }}"
+rel="stylesheet" type="text/css"/>
+{% endblock %}
+{% block title %}Productos-palmex{% endblock %}
+{% block id 'prodpol' %}
+{% block article %}
+<div id="title">
+<h2>Palmex</h2>
+<img class="title" alt="icono carrito" src="{{ asset('bundles/producto/images/carrito.png') }}">
+</div>
+<img class="prod" alt="Estuche de policosanol" src="{{ asset('bundles/producto/images/abexol.png') }}">
+<h4 class="producto">Acciones</h4> <p>El Palmex produce efectos antioxidantes, caracterizados por reducir la oxidación de lípidos y proteínas generada por los radicales libres producidos por el propio metabolismo celular normal y/o por agentes nocivos, la cual si sobrepasa los mecanismos antioxidantes con que el organismo las contrarresta produce un desequilibrio denominado estrés oxidativo, que se exacerba en diversos estados fisiopatológicos. El Palmex ejerce un efecto secuestrador de los radicales libres y aumenta la respuesta antioxidante del organismo. Los efectos antioxidantes del Palmex han sido demostrados en estudios experimentales y clínicos. Las evidencias han demostrado que sus efectos antioxidantes se manifiestan en plasma, hígado, cerebro, y próstata, entre otros tejidos.</p>
+<h4 class="producto">Descripción</h4>
+<p>El Palmex está constituido por el Extracto lipídico del Fruto de la Palma Real (ELFP)(Roystonea regia), el cual consiste en unamezcla de ácidos grasos libres, fundamentalmente ácido oleico, seguido de los ácidos láurico, mirístico y palmítico como principales componentes.
+<h4 class="producto">Composición</h4>
+<p>Cada cápsula contiene: Ácidos grasos presentes en el ELFP 320 mg.
+</p>
+<h4 class="producto">Indicaciones</h4>
+<p>El Palmex se recomienda como suplemento nutricional de la dieta diaria, en especial en personas de edad media y avanzada teniendo en cuenta el aumento del estrés oxidativo que ocurre durante el envejecimiento y su impacto en diferentes sistemas del organismo.
+</p>
+<h4 class="producto">Toxicidad y efectos adeversos</h4>
+<p>La investigación de la toxicidad general (aguda, subcrónica y crónica) y especial (genotoxicidad, toxicidad fetal y reproductiva), que han mostrado que es un producto muy seguro, sin evidencias de toxicidad asociada ni aún en dosis muy altas (hasta 2000 mg/kg). 
+</p>
+<h4 class="producto">Consumo</h4>
+<p>Una o dos cápsulas diarias, preferiblemente con el desayuno.</p>
+<h4 class="producto">Presentación</h4>
+<p>Frascos conteniendo 60 ó 120 capsulas cada uno.</p>
+<h4 class="producto">Contraindicaciones</h4>
+<p>Embarazo y lactancia.</p>
+<h4 class="producto">Precausiones</h4>
+<p>No administrar a niños.</p>
+<h4 class="producto">Almacenamiento</h4>
+<p>Puede conservarse a temperatura ambiente.</p>
+<h4 class="producto">Vencimiento</h4>
+<p>Cinco  años después de la fecha de fabricación.</p>
+{% endblock %}

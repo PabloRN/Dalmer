@@ -84,9 +84,14 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // ProductoBundle_homepage
-        if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]+?)$#s', $pathinfo, $matches)) {
-            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Dalmer\\ProductoBundle\\Controller\\DefaultController::indexAction',)), array('_route' => 'ProductoBundle_homepage'));
+        // productos_estaticas_naturales
+        if (0 === strpos($pathinfo, '/productos/naturales') && preg_match('#^/productos/naturales/(?P<producto>[^/]+?)$#s', $pathinfo, $matches)) {
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Dalmer\\ProductoBundle\\Controller\\DefaultController::productoAction',)), array('_route' => 'productos_estaticas_naturales'));
+        }
+
+        // productos_estaticas_implantes
+        if (0 === strpos($pathinfo, '/productos/implantes') && preg_match('#^/productos/implantes/(?P<producto>[^/]+?)$#s', $pathinfo, $matches)) {
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Dalmer\\ProductoBundle\\Controller\\DefaultController::productoAction',)), array('_route' => 'productos_estaticas_implantes'));
         }
 
         // paginas_estaticas

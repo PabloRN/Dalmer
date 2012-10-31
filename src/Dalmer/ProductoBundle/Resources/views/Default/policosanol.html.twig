@@ -1,0 +1,22 @@
+{% extends '::frontend.html.twig' %}
+{% block stylesheets %}
+{{ parent() }}
+<link href="{{ asset('bundles/producto/css/policosanol.css') }}"
+rel="stylesheet" type="text/css"/>
+{% endblock %}
+{% block title %}Productos-policosanol{% endblock %}
+{% block id 'prodpol' %}
+{% block article %}
+<div id="title">
+<h2>Policosanol (5mg, 10mg, 20mg)</h2>
+<img class="title" alt="icono carrito" src="{{ asset('bundles/producto/images/carrito.png') }}">
+</div>
+<img class="prod" alt="Estuche de policosanol" src="{{ asset('bundles/producto/images/PPG5Prod.png') }}">
+<p>Cada comprimido recubierto contiene: policosanol - PPG 5 mg.
+Exc.: lactosa 68,2 mg; almidón de maíz 18,0 mg; sacarosa 6,0
+mg; celulosa microcristalina 9,6 mg; gelatina 3,0 mg; estearato de
+magnesio 1,8 mg; talco 3,1 mg; croscarmelosa sódica 6,0 mg;
+agua desionizada c.s.; acetoftalato de celulosa 0,4 mg; polietilenglicol
+2000 0,4 mg; dióxido de titanio 0,3 mg; color amarillo N°5
+(tartrazina) FDyC laca 0,2 mg.</p>
+{% endblock %}
