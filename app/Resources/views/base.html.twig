@@ -2,11 +2,14 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Bienvenido a Dalmer.s.a{% endblock %}</title>
+		<meta language="es">
+		<meta name="description" content="{% block content %}Laboratorios Dalmer s.a. distribuidora de farmacos | especializada en la distribuicion de productos naturales{% endblock %}">
+        <title>{% block title %}Bienvenido a los aboratorios Dalmer.s.a{% endblock %}</title>
+		<meta name="keywords" content="{% block keywords %}farmacos, productos naturales, antioxidantes, colesterol,">{% endblock %}
         {% block stylesheets %}{% endblock %}
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
-		<script src="{{ asset('bundles/producto/js/jquery-1.7.2.min.js') }}"></script>
-		<script src="{{ asset('bundles/producto/js/jquery-ui-1.8.20.custom.min.js') }}"></script>
+		<script src="{{ asset('bundles/producto/js/jquery-1.8.2.js') }}"></script>
+		<script src="{{ asset('bundles/producto/js/jquery-ui.js') }}"></script>
     </head>
     <body id="{% block id '' %}"><div id="contenedor">
         {% block body %}{% endblock %}

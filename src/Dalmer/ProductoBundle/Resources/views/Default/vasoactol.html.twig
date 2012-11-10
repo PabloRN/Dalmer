@@ -1,0 +1,105 @@
+{% extends '::frontend.html.twig' %}
+{% block stylesheets %}
+{{ parent() }}
+<link href="{{ asset('bundles/producto/css/policosanol.css') }}"
+rel="stylesheet" type="text/css"/>
+<link href="{{ asset('bundles/producto/css/jquery-ui.css') }}"
+rel="stylesheet" type="text/css"/>
+{% endblock %}
+{% block title %}Productos-Vasoactol{% endblock %}
+{% block id 'prodvas' %}
+{% block article %}
+<div id="title">
+<h2>Vasoactol</h2>
+<img class="title" alt="icono carrito" src="{{ asset('bundles/producto/images/carrito.png') }}">
+</div>
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Descripción</a></li>
+        <li><a href="#tabs-2">Patentes</a></li>
+        <li><a href="#tabs-3">Registros</a></li>
+    </ul>
+    <div id="tabs-1">
+
+<img class="prod" alt="Estuche de policosanol" src="{{ asset('bundles/producto/images/abexol.png') }}">
+<h4 class="producto">Acciones</h4> <p>Es un complemento de la dieta que satisface las necesidades particulares de personas con condiciones fisiológicas especiales y/ó alteraciones de su proceso de asimilación. Este producto representa un suplemento alimenticio para completar la dieta diaria de personas en situaciones de especial esfuerzo y <b>desgaste físico</b>, tales como individuos de mediana y avanzada edad y/ó deportistas, así como aquellos casos con alteraciones en el metabolismo de las grasas. Ha sido observado que este producto incrementa la eficiencia física en ancianos y que produce efectos beneficiosos sobre el estado general de salud de estos sujetos, frecuentemente aquejados de disfunciones relacionadas con alteraciones del equilibrio fisiológico propio de la tercera edad. Similares resultados también han sido apreciados en sujetos de mediana edad con situaciones de desgaste físico y en algunos colectivos de personas que practican deportes.
+</p>
+<h4 class="producto">Composición y Descripción</h4>
+<p>El Vasoactol contiene 6 mg de extracto de cera de caña de azúcar, junto a los excipientes necesarios añadidos en cantidades suficientes. Los componentes fundamentales del Vasoactol son ácidos grasos insaturados y saturados y alcoholes alifáticos primarios de larga cadena. Este extracto se aisla de la cera que recubre la superficie del tallo de la caña de azúcar. En el reino vegetal las ceras constituyen la capa más superficial que cubre y protege los tegumentos de los frutos, tallos y hojas. Por tanto, son habitualmente ingeridas en las dietas que en frutas y vegetales se consumen íntegramente las ceras están constituidas fundamentalmente por ácidos grasos y alcoholes alifáticos superiores.</p>
+<h4 class="producto">Seguridad y tolerabilidad</h4>
+<p>El Vasoactol es un producto seguro, que no ha mostrado evidencia de toxicidad realcionada con su uso. No se han demostrado interacciones con el consumo de medicamentos. No debe consumirse por personas hipersensibles a algún componente de la tableta en embarazo y lactancia. No se recomienda su uso en niños
+</p>
+<h4 class="producto">Consumo</h4>
+<p>Se recomienda la ingestión de una o dos tabletas con la comida</p>
+<h4 class="producto">Almacenamiento</h4>
+<p>Puede conservarse a temperatura ambiente.</p>
+<h4 class="producto">Vencimiento</h4>
+<p>Tres años después de la fecha de fabricación.</p>
+</div>
+<div id="tabs-2">
+<h4 class="producto">Título</h4>
+<p>Mezcla de ácidos grasos primarios de alto peso molecular obtenidos de la cera de caña de azúcar y sus usos farmacéuticos</p>
+<h4 class="producto">Autores</h4>
+<p>Luis González, David Marrero, Abilio Laguna, Rosa M. Más,  Daysi Carvajal, M. Lourdes Arruzazabala, Miriam Cora y Roberto Menéndez.</p>
+<h4 class="producto">Titular</h4>
+<p>Laboratorios DALMER S.A.</p>
+<table>
+<caption>Paises donde está vigente la patente</caption>
+<thead>
+<tr>
+<th>Pais</th>
+<th>No.Registro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuba</td>
+<td>1997/035</td>
+</tr>
+<tr>
+<td>Sudáfrica</td>
+<td>98/2744</td>
+</tr>
+<tr>
+<td>Iran</td>
+<td>26029</td>
+</tr>
+<tr>
+<td>Australia</td>
+<td>732045</td>
+</tr>
+<tr>
+<td>Estados Unidos</td>
+<td>6, 486205</td>
+</tr>
+<tr>
+<td>Europa**</td>
+<td>0969827</td>
+</tr>
+</tbody>
+</table>
+<p>** Austria, Bélgica, Suiza, Chipre, Alemania, Dinamarca, España, Finlandia, Francia, Gran Bretaña, Irlanda, Italia, Liechtenstein, Luxemburgo, Mónaco, Holanda, Portugal y Suecia.</p>
+</div>
+<div id="tabs-3">
+<ul class="check">
+<li>Australia (medicina complementaria)</li>
+<li>Japón (alimentos)</li>
+<li>Corea del Sur (nutraceutico) </li>
+<li>Noruega (suplemento nutricional) </li>
+</ul>
+
+</div>
+</div>
+{% endblock %}
+{% block javascripts %}
+  <script>
+  $(document).ready(function() {
+    $("#tabs").tabs({
+	active: 0
+
+	
+	
+	});
+  });
+  </script>
+{% endblock %}

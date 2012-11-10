@@ -94,6 +94,21 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Dalmer\\ProductoBundle\\Controller\\DefaultController::productoAction',)), array('_route' => 'productos_estaticas_implantes'));
         }
 
+        // productos_estaticas_aceites
+        if (0 === strpos($pathinfo, '/productos/aceites') && preg_match('#^/productos/aceites/(?P<producto>[^/]+?)$#s', $pathinfo, $matches)) {
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Dalmer\\ProductoBundle\\Controller\\DefaultController::productoAction',)), array('_route' => 'productos_estaticas_aceites'));
+        }
+
+        // productos_estaticas_equipos
+        if (0 === strpos($pathinfo, '/productos/equipos') && preg_match('#^/productos/equipos/(?P<producto>[^/]+?)$#s', $pathinfo, $matches)) {
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Dalmer\\ProductoBundle\\Controller\\DefaultController::productoAction',)), array('_route' => 'productos_estaticas_equipos'));
+        }
+
+        // productos_estaticas_cosmeticos
+        if (0 === strpos($pathinfo, '/productos/cosmeticos') && preg_match('#^/productos/cosmeticos/(?P<producto>[^/]+?)$#s', $pathinfo, $matches)) {
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Dalmer\\ProductoBundle\\Controller\\DefaultController::productoAction',)), array('_route' => 'productos_estaticas_cosmeticos'));
+        }
+
         // paginas_estaticas
         if (preg_match('#^/(?P<pagina>[^/]+?)$#s', $pathinfo, $matches)) {
             return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Dalmer\\EstaticasBundle\\Controller\\DefaultController::estaticaAction',)), array('_route' => 'paginas_estaticas'));

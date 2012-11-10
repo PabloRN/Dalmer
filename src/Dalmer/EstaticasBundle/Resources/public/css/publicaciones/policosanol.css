@@ -26,9 +26,6 @@ margin: 0 0 12px 0;
 color: #333;
 line-height: 1em;
 list-style-type:none;
-}
-#accordion ul li{
-list-style-type:none;
 padding: 0 0 0 45px;
 position: relative;
 text-align: justify;

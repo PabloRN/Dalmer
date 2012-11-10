@@ -13,12 +13,13 @@ use Symfony\Component\Routing\Exception\RouteNotFoundException;
 class appprodUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerator
 {
     static private $declaredRouteNames = array(
+       'ProveedorBundle_homepage' => true,
+       'EventoBundle_homepage' => true,
+       'DistribuidorBundle_homepage' => true,
+       'NoticiaBundle_homepage' => true,
+       'PublicacionBundle_homepage' => true,
        'ProductoBundle_homepage' => true,
        'paginas_estaticas' => true,
-       'publicaciones_estaticas' => true,
-       'usuario_login' => true,
-       'usuario_login_check' => true,
-       'usuario_logout' => true,
     );
 
     /**
@@ -42,6 +43,31 @@ class appprodUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerat
         return $this->doGenerate($variables, $defaults, $requirements, $tokens, $parameters, $name, $absolute);
     }
 
+    private function getProveedorBundle_homepageRouteInfo()
+    {
+        return array(array (  0 => 'name',), array (  '_controller' => 'Dalmer\\ProveedorBundle\\Controller\\DefaultController::indexAction',), array (), array (  0 =>   array (    0 => 'variable',    1 => '/',    2 => '[^/]+?',    3 => 'name',  ),  1 =>   array (    0 => 'text',    1 => '/hello',  ),));
+    }
+
+    private function getEventoBundle_homepageRouteInfo()
+    {
+        return array(array (  0 => 'name',), array (  '_controller' => 'Dalmer\\EventoBundle\\Controller\\DefaultController::indexAction',), array (), array (  0 =>   array (    0 => 'variable',    1 => '/',    2 => '[^/]+?',    3 => 'name',  ),  1 =>   array (    0 => 'text',    1 => '/hello',  ),));
+    }
+
+    private function getDistribuidorBundle_homepageRouteInfo()
+    {
+        return array(array (  0 => 'name',), array (  '_controller' => 'Dalmer\\DistribuidorBundle\\Controller\\DefaultController::indexAction',), array (), array (  0 =>   array (    0 => 'variable',    1 => '/',    2 => '[^/]+?',    3 => 'name',  ),  1 =>   array (    0 => 'text',    1 => '/hello',  ),));
+    }
+
+    private function getNoticiaBundle_homepageRouteInfo()
+    {
+        return array(array (  0 => 'name',), array (  '_controller' => 'Dalmer\\NoticiaBundle\\Controller\\DefaultController::indexAction',), array (), array (  0 =>   array (    0 => 'variable',    1 => '/',    2 => '[^/]+?',    3 => 'name',  ),  1 =>   array (    0 => 'text',    1 => '/hello',  ),));
+    }
+
+    private function getPublicacionBundle_homepageRouteInfo()
+    {
+        return array(array (  0 => 'name',), array (  '_controller' => 'Dalmer\\PublicacionBundle\\Controller\\DefaultController::indexAction',), array (), array (  0 =>   array (    0 => 'variable',    1 => '/',    2 => '[^/]+?',    3 => 'name',  ),  1 =>   array (    0 => 'text',    1 => '/hello',  ),));
+    }
+
     private function getProductoBundle_homepageRouteInfo()
     {
         return array(array (  0 => 'name',), array (  '_controller' => 'Dalmer\\ProductoBundle\\Controller\\DefaultController::indexAction',), array (), array (  0 =>   array (    0 => 'variable',    1 => '/',    2 => '[^/]+?',    3 => 'name',  ),  1 =>   array (    0 => 'text',    1 => '/hello',  ),));
@@ -50,25 +76,5 @@ class appprodUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerat
     private function getpaginas_estaticasRouteInfo()
     {
         return array(array (  0 => 'pagina',), array (  '_controller' => 'Dalmer\\EstaticasBundle\\Controller\\DefaultController::estaticaAction',), array (), array (  0 =>   array (    0 => 'variable',    1 => '/',    2 => '[^/]+?',    3 => 'pagina',  ),));
-    }
-
-    private function getpublicaciones_estaticasRouteInfo()
-    {
-        return array(array (  0 => 'producto',), array (  '_controller' => 'Dalmer\\EstaticasBundle\\Controller\\DefaultController::publicacionAction',), array (), array (  0 =>   array (    0 => 'variable',    1 => '/',    2 => '[^/]+?',    3 => 'producto',  ),  1 =>   array (    0 => 'text',    1 => '/publicaciones',  ),));
-    }
-
-    private function getusuario_loginRouteInfo()
-    {
-        return array(array (), array (  '_controller' => 'Dalmer\\UsuarioBundle\\Controller\\DefaultController::loginAction',), array (), array (  0 =>   array (    0 => 'text',    1 => '/usuario/login',  ),));
-    }
-
-    private function getusuario_login_checkRouteInfo()
-    {
-        return array(array (), array (), array (), array (  0 =>   array (    0 => 'text',    1 => '/usuario/login_check',  ),));
-    }
-
-    private function getusuario_logoutRouteInfo()
-    {
-        return array(array (), array (), array (), array (  0 =>   array (    0 => 'text',    1 => '/usuario/logout',  ),));
     }
 }

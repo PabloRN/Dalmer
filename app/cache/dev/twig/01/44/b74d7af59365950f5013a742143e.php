@@ -34,34 +34,35 @@ class __TwigTemplate_0144b74d7af59365950f5013a742143e extends Twig_Template
         // line 3
         $this->displayParentBlock("stylesheets", $context, $blocks);
         echo "
-<link href=\"";
-        // line 4
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/estaticas/css/servicios.css"), "html", null, true);
+";
+        // line 6
+        echo "<link href=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/producto/css/jquery-ui.css"), "html", null, true);
         echo "\"
 rel=\"stylesheet\" type=\"text/css\"/>
 ";
     }
 
-    // line 7
+    // line 9
     public function block_title($context, array $blocks = array())
     {
         echo "Servicios";
     }
 
-    // line 8
+    // line 10
     public function block_id($context, array $blocks = array())
     {
         echo "sevicios";
     }
 
-    // line 9
+    // line 11
     public function block_article($context, array $blocks = array())
     {
-        // line 10
+        // line 12
         echo "<div id=\"title\">
 <h2>Servicios</h2>
 <img class=\"title\" alt=\"icono carta\" src=\"";
-        // line 12
+        // line 14
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/estaticas/images/maleta.png"), "html", null, true);
         echo "\">
 </div>
@@ -70,7 +71,7 @@ rel=\"stylesheet\" type=\"text/css\"/>
 <h3><a href=\"#\">Servicios Especializados </a></h3>
 <div>
 <p>
-<ul>
+<ul class=\"check\">
 <li>Asesoría técnica especializada y soluciones a proyectos de tecnologías de tratamiento de aguas para diferentes usos.</li> 
 <li>Asesoría técnica especializada y soluciones a proyectos de tecnologías de tratamiento de residuos líquidos.</li>
 <li>Asesoría técnica especializada y soluciones a proyectos de tecnologías de tratamiento de residuos sólidos.</li>
@@ -84,7 +85,7 @@ rel=\"stylesheet\" type=\"text/css\"/>
 <h3><a href=\"#\">Tratamiento de aguas con ozono </a></h3>
 <div><p>
 Entre los Servicios Científico-Técnicos especializados que se ofertan,  se encuentra  el  tratamiento de aguas  con ozono para: 
-<ul><li>Embotelladoras de agua, jugos y refrescos.</li>  
+<ul class=\"check\"><li>Embotelladoras de agua, jugos y refrescos.</li>  
 <li>Centros de producción de animales de laboratorios libres de gérmenes patógenos.</li>
 <li>Unidades de cría de animales.</li>
 <li>Industria Farmacéutica y Biotecnológica.</li>
@@ -100,7 +101,8 @@ Estos servicios se ofertan en forma de paquete tecnológico que incluye equipami
 </div>
 <h3><a href=\"#\">Servicios analíticos </a></h3>
 <div>
-<p>Servicios analíticos que incluyen diversos aspectos relacionados con el muestreo y en especial lo relacionado con el cumplimiento de las Normas de Vertimiento y la solicitud de Licencias Ambientales. <ul>
+<p>Servicios analíticos que incluyen diversos aspectos relacionados con el muestreo y en especial lo relacionado con el cumplimiento de las Normas de Vertimiento y la solicitud de Licencias Ambientales.
+<ul class=\"check\">
 <li>Aguas y aguas residuales</li>
 <li>Demanda Química de Oxigeno.</li>
 <li>Demanda Bioquímica de Oxigeno.</li>
@@ -135,7 +137,7 @@ Estos servicios se ofertan en forma de paquete tecnológico que incluye equipami
 <h3><a href=\"#\">Servicios analíticos(Ensayos Microbiológicos) </a></h3>
 <div>
 <p>Servicios analíticos que incluyen diversos aspectos relacionados con el muestreo y en especial lo relacionado con el cumplimiento de las Normas de Vertimiento y la solicitud de Licencias Ambientales. 
-<ul>
+<ul class=\"check\">
 <li>Coliformes totales (presuntivo y confirmativo).</li>
 <li>Coliformes Fecales (confirmativos).</li>
 <li>Pseudomonas (presuntivo y confirmativo).</li> 
@@ -152,7 +154,7 @@ Estos servicios se ofertan en forma de paquete tecnológico que incluye equipami
 <h3><a href=\"#\">Agresividad corrosiva </a></h3>
 <div>
 <p>Entre los Servicios Científico-Técnicos que se ofertan se encuentran aquellos relacionados con la protección de instalaciones contra la agresividad corrosiva, así como la determinación de la agresividad corrosiva de los diferentes tipos  de atmósferas.
-<ul>
+<ul class=\"check\">
 <li>Evaluación y caracterización de la agresividad corrosiva de la atmósfera de las zonas de interés del cliente: urbana, industrial, industrial-costera y agua de mar.</li>
 <li>Pronosticar el comportamiento corrosivo de materiales, instalaciones, piezas, artículos constructivos y otros.</li> 
 <li>Ensayos acelerados (de calor humedad, niebla salina) con regímenes similares al clima de Cuba. 
@@ -166,10 +168,10 @@ En la realización de los servicios se utilizan normas y metodologías cubanas e
 ";
     }
 
-    // line 113
+    // line 116
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 114
+        // line 117
         echo "  <script>
   \$(document).ready(function() {
     \$(\"#accordion\").accordion({
@@ -196,6 +198,6 @@ En la realización de los servicios se utilizan normas y metodologías cubanas e
 
     public function getDebugInfo()
     {
-        return array (  171 => 114,  168 => 113,  63 => 12,  59 => 10,  56 => 9,  50 => 8,  44 => 7,  37 => 4,  33 => 3,  30 => 2,);
+        return array (  173 => 117,  170 => 116,  45 => 9,  509 => 452,  506 => 451,  56 => 9,  340 => 94,  331 => 158,  325 => 155,  317 => 152,  310 => 150,  303 => 148,  294 => 144,  287 => 142,  280 => 140,  271 => 136,  264 => 134,  257 => 132,  246 => 124,  241 => 122,  236 => 120,  231 => 118,  206 => 95,  184 => 83,  180 => 82,  168 => 73,  160 => 68,  144 => 61,  136 => 56,  119 => 48,  83 => 33,  61 => 18,  85 => 8,  66 => 24,  36 => 4,  209 => 84,  205 => 82,  196 => 79,  192 => 78,  189 => 77,  178 => 71,  176 => 70,  165 => 63,  161 => 61,  152 => 58,  148 => 62,  145 => 56,  141 => 55,  134 => 50,  132 => 55,  127 => 46,  123 => 49,  109 => 39,  93 => 33,  90 => 32,  54 => 14,  133 => 44,  124 => 41,  111 => 46,  80 => 26,  60 => 12,  52 => 12,  97 => 34,  95 => 36,  88 => 29,  78 => 25,  71 => 14,  25 => 4,  72 => 16,  64 => 14,  53 => 12,  34 => 5,  92 => 20,  86 => 28,  79 => 7,  19 => 2,  42 => 8,  40 => 7,  29 => 2,  26 => 3,  224 => 96,  215 => 90,  211 => 88,  204 => 94,  200 => 83,  195 => 88,  193 => 79,  190 => 78,  188 => 84,  185 => 76,  179 => 72,  177 => 71,  171 => 67,  162 => 63,  158 => 61,  156 => 67,  153 => 59,  146 => 55,  142 => 54,  137 => 51,  126 => 46,  120 => 39,  117 => 44,  103 => 36,  74 => 27,  47 => 19,  32 => 3,  24 => 1,  22 => 3,  23 => 3,  17 => 1,  69 => 20,  63 => 12,  58 => 10,  49 => 8,  43 => 7,  37 => 6,  20 => 2,  139 => 26,  131 => 48,  128 => 43,  125 => 42,  121 => 40,  115 => 47,  107 => 16,  99 => 34,  96 => 14,  91 => 9,  82 => 27,  77 => 25,  75 => 31,  57 => 11,  50 => 8,  46 => 10,  44 => 7,  39 => 8,  33 => 3,  30 => 2,  27 => 4,  135 => 50,  129 => 47,  122 => 46,  116 => 42,  113 => 40,  108 => 40,  104 => 24,  102 => 15,  94 => 33,  89 => 20,  87 => 34,  84 => 28,  81 => 26,  73 => 6,  70 => 26,  67 => 17,  62 => 12,  59 => 10,  55 => 9,  51 => 10,  48 => 10,  41 => 9,  38 => 8,  35 => 7,  31 => 6,  28 => 3,);
     }
 }

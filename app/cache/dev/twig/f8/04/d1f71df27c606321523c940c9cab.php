@@ -44,7 +44,7 @@ rel=\"stylesheet\" type=\"text/css\"/>
     // line 7
     public function block_title($context, array $blocks = array())
     {
-        echo "Atención al cliente";
+        echo "Laboratorios-Dalmer:Atención al cliente";
     }
 
     // line 8

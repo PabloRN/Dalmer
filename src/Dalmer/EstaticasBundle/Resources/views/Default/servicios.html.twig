@@ -1,7 +1,9 @@
 {% extends '::frontend.html.twig' %}
 {% block stylesheets %}
 {{ parent() }}
-<link href="{{ asset('bundles/estaticas/css/servicios.css') }}"
+{# <link href="{{ asset('bundles/estaticas/css/servicios.css') }}"
+rel="stylesheet" type="text/css"/> #}
+<link href="{{ asset('bundles/producto/css/jquery-ui.css') }}"
 rel="stylesheet" type="text/css"/>
 {% endblock %}
 {% block title %}Servicios{% endblock %}
@@ -16,7 +18,7 @@ rel="stylesheet" type="text/css"/>
 <h3><a href="#">Servicios Especializados </a></h3>
 <div>
 <p>
-<ul>
+<ul class="check">
 <li>Asesoría técnica especializada y soluciones a proyectos de tecnologías de tratamiento de aguas para diferentes usos.</li> 
 <li>Asesoría técnica especializada y soluciones a proyectos de tecnologías de tratamiento de residuos líquidos.</li>
 <li>Asesoría técnica especializada y soluciones a proyectos de tecnologías de tratamiento de residuos sólidos.</li>
@@ -30,7 +32,7 @@ rel="stylesheet" type="text/css"/>
 <h3><a href="#">Tratamiento de aguas con ozono </a></h3>
 <div><p>
 Entre los Servicios Científico-Técnicos especializados que se ofertan,  se encuentra  el  tratamiento de aguas  con ozono para: 
-<ul><li>Embotelladoras de agua, jugos y refrescos.</li>  
+<ul class="check"><li>Embotelladoras de agua, jugos y refrescos.</li>  
 <li>Centros de producción de animales de laboratorios libres de gérmenes patógenos.</li>
 <li>Unidades de cría de animales.</li>
 <li>Industria Farmacéutica y Biotecnológica.</li>
@@ -46,7 +48,8 @@ Estos servicios se ofertan en forma de paquete tecnológico que incluye equipami
 </div>
 <h3><a href="#">Servicios analíticos </a></h3>
 <div>
-<p>Servicios analíticos que incluyen diversos aspectos relacionados con el muestreo y en especial lo relacionado con el cumplimiento de las Normas de Vertimiento y la solicitud de Licencias Ambientales. <ul>
+<p>Servicios analíticos que incluyen diversos aspectos relacionados con el muestreo y en especial lo relacionado con el cumplimiento de las Normas de Vertimiento y la solicitud de Licencias Ambientales.
+<ul class="check">
 <li>Aguas y aguas residuales</li>
 <li>Demanda Química de Oxigeno.</li>
 <li>Demanda Bioquímica de Oxigeno.</li>
@@ -81,7 +84,7 @@ Estos servicios se ofertan en forma de paquete tecnológico que incluye equipami
 <h3><a href="#">Servicios analíticos(Ensayos Microbiológicos) </a></h3>
 <div>
 <p>Servicios analíticos que incluyen diversos aspectos relacionados con el muestreo y en especial lo relacionado con el cumplimiento de las Normas de Vertimiento y la solicitud de Licencias Ambientales. 
-<ul>
+<ul class="check">
 <li>Coliformes totales (presuntivo y confirmativo).</li>
 <li>Coliformes Fecales (confirmativos).</li>
 <li>Pseudomonas (presuntivo y confirmativo).</li> 
@@ -98,7 +101,7 @@ Estos servicios se ofertan en forma de paquete tecnológico que incluye equipami
 <h3><a href="#">Agresividad corrosiva </a></h3>
 <div>
 <p>Entre los Servicios Científico-Técnicos que se ofertan se encuentran aquellos relacionados con la protección de instalaciones contra la agresividad corrosiva, así como la determinación de la agresividad corrosiva de los diferentes tipos  de atmósferas.
-<ul>
+<ul class="check">
 <li>Evaluación y caracterización de la agresividad corrosiva de la atmósfera de las zonas de interés del cliente: urbana, industrial, industrial-costera y agua de mar.</li>
 <li>Pronosticar el comportamiento corrosivo de materiales, instalaciones, piezas, artículos constructivos y otros.</li> 
 <li>Ensayos acelerados (de calor humedad, niebla salina) con regímenes similares al clima de Cuba. 

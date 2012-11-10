@@ -18,7 +18,7 @@ font-size: 1.5em;
 }*/
 p {
 font-family: "Myriad Pro", "Helvetica neue", Helvetica, Arial, sans-serif;
-color: #333;
+color: #666;
 text-align: justify;
 }
 ul li {
@@ -27,15 +27,15 @@ list-style-type: circle;
 #title {
 width: 100%; 
 height: 32px;
-border-bottom: 2px solid #00a651; 
+border-bottom: 1px solid #00a651; 
 position: relative;
 margin-bottom: 20px;
 }
 h2 {
 color: #00a651;
-font-size: 20px;
-font-family: "Myriad Pro", sans-serif;
-font-weight: bold;
+font-size: 18px;
+font-family: Arial, "Myriad Pro", sans-serif;
+font-weight: normal;
 font-style: normal;
 float: left;
 display: block;
@@ -93,27 +93,23 @@ border-radius: 3px 3px 3px 3px;
 display:inline;
 }
 #topheader > #login  > form label{
-color: #00A651;
-font-weight: bold;
+color: #8f8f8f;
+font-weight: normal;
 }
 #topheader > #login  > form input{
-border: 1px solid #00a651;
+border: 1px solid #8f8f8f;
 padding: 2px;
 }
 #topheader > #login  > form input.submit{
-margin-top: 5px;
-background-color: #00A651;
-border-radius: 3px 3px 3px 3px;
-color: #FFFFFF;
-font-family: "Myriad Pro",sans-serif;
-font-size: 15px;
-font-weight: 100;
-padding: 2px 0;
-text-align: center;
-/*text-shadow: 1px 1px 1px #333333;*/
-width: 50px; 
-padding: 0;
-float: left;
+
+    background-color: #00B859;
+    background-image: -moz-linear-gradient(center top , #00B859 30%, #00A651);
+    background-repeat: repeat-y;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	font-size:14px;
+
 }
 #topheader > #login  > form input#no_cerrar{
 margin: 10px 0 0 6px;
@@ -124,7 +120,10 @@ margin: 6px 0 0 4px;
 header > #bottomheader {
 height: 35px;
 padding: 2px;
-background: none repeat scroll 0 0 #00a651;
+    background-color: #00B859;
+    background-image: -moz-linear-gradient(center top , #00B859 30%, #00A651);
+    background-repeat: repeat-y;
+    
 }
 nav#principal {
 font-family: "Myriad Pro", Verdana, Helvetica, sans-serif;
@@ -139,8 +138,8 @@ nav#principal li.separador{
 background-color: #01B159;
     border-left: 2px solid #018743;
     height: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 2px;
+    margin-right: 5px;
 	margin-top: 8px;
     width: 1px;
 	padding: 0;
@@ -153,9 +152,10 @@ left: 220px;
 nav#principal ul li {
 float: left;
 1line-height: 60px;
-margin:5px 2px;
+margin:5px 0;
 padding: 0 2px;
 list-style-type: none;
+
 }
 nav#principal ul li ul {
 position: absolute;
@@ -163,9 +163,9 @@ left:0;
 top: 35px;
 display: none;
 z-index: 50;
--webkit-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.54);
+/*-webkit-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.54);
 -moz-box-shadow:    0px 3px 5px rgba(50, 50, 50, 0.54);
-box-shadow:         0px 2px 4px rgba(50, 50, 50, 0.54);
+box-shadow:         0px 2px 4px rgba(50, 50, 50, 0.54);*/
 }
 nav#principal ul li ul.publicaciones{
 left: 210px;
@@ -175,21 +175,43 @@ left: 100px;
 }
 nav#principal ul li ul.productos > li ul{
 display: none;
-left: 170px;
+left: 171px;
 top: 0;
 }
 nav#principal ul li ul.productos li:hover ul.subproductos{
 display: block;
-width: 170px;
+min-width: 170px;
 
+}
+nav#principal ul li ul.productos li:hover ul.subproductos2{
+display: block;
+min-width: 170px;
+top: 40px;
+}
+nav#principal ul li ul.productos li:hover ul.subproductos3{
+display: block;
+min-width: 170px;
+top: 81px;
+}
+nav#principal ul li ul.productos li:hover ul.subproductos4{
+display: block;
+min-width: 170px;
+top: 122px;
+}
+nav#principal ul li ul.productos li:hover ul.subproductos5{
+display: block;
+min-width: 170px;
+top: 163px;
 }
 nav#principal ul li ul li {
 clear: both;
 display: block;
-width: 100%;
+width: 170px;
 /*padding: 5px 0;*/
 margin: 0;
 padding: 0;
+border-bottom: 1px dotted rgba(0, 166, 81, 0.01);
+border-top: 1px dotted rgba(0, 166, 81, 0.01);
 }
 nav#principal ul li a {
 display: block;
@@ -198,7 +220,7 @@ font-family: "Myriad Pro", Verdana, Helvetica, sans-serif;
 font-size: 18px;
 font-weight: 400;
 color: #fff;
-text-shadow: 1px 1px 1px #333;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 height: 30px;
 
 }
@@ -214,22 +236,30 @@ display: block;
 float: left;
 border: 1px solid #00a651;
 background-color: rgba(0, 166, 81, 0.8);
-text-shadow: 1px 1px 1px #333;
+/*text-shadow: 1px 1px 1px #333;*/
 border-radius: 0 0 1px 1px;
 padding: 0;
+
+border-left: 0px;
 
 }
 nav#principal ul li:hover ul li a{
 display: block;
-font-family: "Myriad Pro", sans-serif;
-font-size: 17px;
+font-family: arial, sans-serif;
+font-size: 15px;
 font-weight: 100;
-width: 100%;
+min-width: 170px;
 vertical-align: central;
-padding: .3em .4em 0 .4em;
+padding: .6em .4em 0em .4em;
+vertical-align: center;
+color: #fff;
+text-shadow: none;
+margin:0;
 }
 nav#principal ul li ul li:hover{
 background-color: rgba(0, 166, 81, 0.3);
+border-bottom: 1px dotted #00A651;
+border-top: 1px dotted #00A651;
 }
 #contenedor {
 
@@ -248,7 +278,7 @@ clear: both;
 
 }
 aside {
-border: 2px solid #00a651;
+border: 1px solid #00a651;
 border-top-width: 0;
 border-right-width: 0;
 float: right;
@@ -258,18 +288,21 @@ min-height: 400px;
 overflow: hidden;
 padding-bottom: 32767px;
 margin-bottom: -32767px;
-overflow: hidden;
+
 }
 aside h4 {
 text-align: center;
 color: #fff;
 font-family: "Myriad Pro", sans-serif;
 font-size: 15px;
-text-shadow: 1px 1px 1px #333;
-background-color: #00a651;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 border-radius: 3px;
 font-weight: 100;
 padding: 2px 0;
+    background-color: #00B859;
+    background-image: -moz-linear-gradient(center top , #00B859 30%, #00A651);
+    background-repeat: repeat-y;
+
 }
 footer {
 height: auto;
@@ -315,8 +348,8 @@ list-style-type: none;
 }
 nav#footer ul li a {
 text-decoration: none;
-font-family: "Myriad Pro", "Helvetica neue", Helvetica, Arial, sans-serif;
-font-size: 17px;
+font-family: Arial, sans-serif;
+font-size: 15px;
 font-weight: 100;
 color: #ffc;
 font-style: normal;
@@ -419,3 +452,107 @@ margin-top: -4px;
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }*/
+ul.check li {
+margin: 0 0 12px 0;
+color: #666;
+line-height: 1em;
+list-style-type:none;
+padding: 0 0 0 45px;
+position: relative;
+text-align: justify;
+line-height: 19.5px;
+}
+ul.check li:before{
+/*fill it with a blank space*/
+content: "\00a0";
+ 
+/*make it a block element*/
+display: block;
+ 
+/*adding an 8px round border to a 0x0 element creates an 8px circle*/
+border: solid 8px #00A651;
+border-radius: 8px;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+height: 0;
+width: 0;
+ 
+/*Now position it on the left of the list item, and center it vertically
+(so that it will work with multiple line list-items)*/
+position: absolute;
+left: 7px;
+top: 40%;
+margin-top: -8px;
+}
+ul.check li:after{
+/*Add another block-level blank space*/
+content: "\00a0";
+display:block;
+ 
+/*Make it a small rectangle so the border will create an L-shape*/
+width: 2px;
+height: 5px;
+ 
+/*Add a white border on the bottom and left, creating that 'L' */
+border: solid #fff;
+border-width: 0 2px 2px 0;
+
+/*Position it on top of the circle*/
+position: absolute;
+left: 14px;
+top: 40%;
+margin-top: -4px;
+ 
+/*Rotate the L 45 degrees to turn it into a checkmark*/
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+}
+#contenedor table {
+    border: 1px solid #E7E7E7;
+    margin: 0 -1px 24px 0;
+    text-align: left;
+    width: 100%;
+
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table, tbody, tfoot, thead, tr, th, td {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+#contenenedor tr th, #contenedor thead th {
+    background-color: #f8f8f8;
+    color: #000000;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 9px 24px;
+}
+#contenedor tr td {
+    border-top: 1px solid #E7E7E7;
+    padding: 6px 24px;
+}
+td {
+    border: 1px solid #CCCCCC;
+    padding: 5px 10px;
+    vertical-align: top;
+}
+th {
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    color: #555555;
+    padding: 8px;
+    text-align: center;
+}
+tr:nth-child(odd){
+background: #fff;
+}
+tr:nth-child(even){
+background-color: #fff;
+}

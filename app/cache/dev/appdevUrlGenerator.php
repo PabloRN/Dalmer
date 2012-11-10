@@ -25,6 +25,9 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
        '_configurator_final' => true,
        'productos_estaticas_naturales' => true,
        'productos_estaticas_implantes' => true,
+       'productos_estaticas_aceites' => true,
+       'productos_estaticas_equipos' => true,
+       'productos_estaticas_cosmeticos' => true,
        'paginas_estaticas' => true,
        'publicaciones_estaticas' => true,
        'usuario_login' => true,
@@ -111,6 +114,21 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
     private function getproductos_estaticas_implantesRouteInfo()
     {
         return array(array (  0 => 'producto',), array (  '_controller' => 'Dalmer\\ProductoBundle\\Controller\\DefaultController::productoAction',), array (), array (  0 =>   array (    0 => 'variable',    1 => '/',    2 => '[^/]+?',    3 => 'producto',  ),  1 =>   array (    0 => 'text',    1 => '/productos/implantes',  ),));
+    }
+
+    private function getproductos_estaticas_aceitesRouteInfo()
+    {
+        return array(array (  0 => 'producto',), array (  '_controller' => 'Dalmer\\ProductoBundle\\Controller\\DefaultController::productoAction',), array (), array (  0 =>   array (    0 => 'variable',    1 => '/',    2 => '[^/]+?',    3 => 'producto',  ),  1 =>   array (    0 => 'text',    1 => '/productos/aceites',  ),));
+    }
+
+    private function getproductos_estaticas_equiposRouteInfo()
+    {
+        return array(array (  0 => 'producto',), array (  '_controller' => 'Dalmer\\ProductoBundle\\Controller\\DefaultController::productoAction',), array (), array (  0 =>   array (    0 => 'variable',    1 => '/',    2 => '[^/]+?',    3 => 'producto',  ),  1 =>   array (    0 => 'text',    1 => '/productos/equipos',  ),));
+    }
+
+    private function getproductos_estaticas_cosmeticosRouteInfo()
+    {
+        return array(array (  0 => 'producto',), array (  '_controller' => 'Dalmer\\ProductoBundle\\Controller\\DefaultController::productoAction',), array (), array (  0 =>   array (    0 => 'variable',    1 => '/',    2 => '[^/]+?',    3 => 'producto',  ),  1 =>   array (    0 => 'text',    1 => '/productos/cosmeticos',  ),));
     }
 
     private function getpaginas_estaticasRouteInfo()

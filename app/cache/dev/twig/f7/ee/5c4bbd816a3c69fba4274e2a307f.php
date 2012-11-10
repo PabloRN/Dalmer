@@ -10,7 +10,9 @@ class __TwigTemplate_f7ee5c4bbd816a3c69fba4274e2a307f extends Twig_Template
         $this->parent = false;
 
         $this->blocks = array(
+            'content' => array($this, 'block_content'),
             'title' => array($this, 'block_title'),
+            'keywords' => array($this, 'block_keywords'),
             'stylesheets' => array($this, 'block_stylesheets'),
             'id' => array($this, 'block_id'),
             'body' => array($this, 'block_body'),
@@ -25,65 +27,85 @@ class __TwigTemplate_f7ee5c4bbd816a3c69fba4274e2a307f extends Twig_Template
 <html>
     <head>
         <meta charset=\"UTF-8\" />
+\t\t<meta language=\"es\">
+\t\t<meta name=\"description\" content=\"";
+        // line 6
+        $this->displayBlock('content', $context, $blocks);
+        echo "\">
         <title>";
-        // line 5
+        // line 7
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
-        ";
-        // line 6
+\t\t<meta name=\"keywords\" content=\"";
+        // line 8
+        $this->displayBlock('keywords', $context, $blocks);
+        // line 9
+        echo "        ";
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 7
+        // line 10
         echo "        <link rel=\"shortcut icon\" href=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("favicon.ico"), "html", null, true);
         echo "\" />
 \t\t<script src=\"";
-        // line 8
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/producto/js/jquery-1.7.2.min.js"), "html", null, true);
+        // line 11
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/producto/js/jquery-1.8.2.js"), "html", null, true);
         echo "\"></script>
 \t\t<script src=\"";
-        // line 9
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/producto/js/jquery-ui-1.8.20.custom.min.js"), "html", null, true);
+        // line 12
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/producto/js/jquery-ui.js"), "html", null, true);
         echo "\"></script>
     </head>
     <body id=\"";
-        // line 11
+        // line 14
         $this->displayBlock('id', $context, $blocks);
         echo "\"><div id=\"contenedor\">
         ";
-        // line 12
+        // line 15
         $this->displayBlock('body', $context, $blocks);
-        // line 13
+        // line 16
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 14
+        // line 17
         echo "</div></body>
 </html>
 ";
     }
 
-    // line 5
-    public function block_title($context, array $blocks = array())
+    // line 6
+    public function block_content($context, array $blocks = array())
     {
-        echo "Bienvenido a Dalmer.s.a";
+        echo "Laboratorios Dalmer s.a. distribuidora de farmacos | especializada en la distribuicion de productos naturales";
     }
 
-    // line 6
+    // line 7
+    public function block_title($context, array $blocks = array())
+    {
+        echo "Bienvenido a los aboratorios Dalmer.s.a";
+    }
+
+    // line 8
+    public function block_keywords($context, array $blocks = array())
+    {
+        echo "farmacos, productos naturales, antioxidantes, colesterol,\">";
+    }
+
+    // line 9
     public function block_stylesheets($context, array $blocks = array())
     {
     }
 
-    // line 11
+    // line 14
     public function block_id($context, array $blocks = array())
     {
         echo "";
     }
 
-    // line 12
+    // line 15
     public function block_body($context, array $blocks = array())
     {
     }
 
-    // line 13
+    // line 16
     public function block_javascripts($context, array $blocks = array())
     {
     }
@@ -100,6 +122,6 @@ class __TwigTemplate_f7ee5c4bbd816a3c69fba4274e2a307f extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  85 => 13,  80 => 12,  69 => 6,  63 => 5,  57 => 14,  54 => 13,  39 => 8,  34 => 7,  22 => 1,  289 => 70,  280 => 134,  274 => 131,  266 => 128,  259 => 126,  252 => 124,  243 => 120,  236 => 118,  229 => 116,  220 => 112,  213 => 110,  206 => 108,  195 => 100,  190 => 98,  185 => 96,  180 => 94,  155 => 71,  153 => 70,  144 => 64,  137 => 60,  133 => 59,  129 => 58,  117 => 49,  109 => 44,  105 => 43,  101 => 42,  90 => 34,  86 => 33,  82 => 32,  78 => 31,  74 => 11,  70 => 29,  61 => 22,  59 => 20,  56 => 16,  52 => 12,  48 => 11,  45 => 11,  37 => 6,  31 => 4,  28 => 5,  62 => 12,  58 => 10,  55 => 9,  49 => 8,  43 => 9,  36 => 4,  32 => 6,  29 => 2,);
+        return array (  102 => 15,  96 => 14,  85 => 8,  73 => 6,  67 => 17,  62 => 15,  58 => 14,  44 => 10,  41 => 9,  39 => 8,  35 => 7,  24 => 1,  340 => 94,  331 => 158,  325 => 155,  317 => 152,  310 => 150,  303 => 148,  294 => 144,  287 => 142,  280 => 140,  271 => 136,  264 => 134,  257 => 132,  246 => 124,  241 => 122,  236 => 120,  231 => 118,  206 => 95,  204 => 94,  195 => 88,  188 => 84,  184 => 83,  180 => 82,  168 => 73,  160 => 68,  156 => 67,  148 => 62,  144 => 61,  136 => 56,  132 => 55,  123 => 49,  119 => 48,  115 => 47,  111 => 46,  107 => 16,  95 => 36,  91 => 9,  87 => 34,  83 => 33,  79 => 7,  75 => 31,  66 => 24,  57 => 16,  53 => 12,  50 => 13,  31 => 6,  28 => 3,  225 => 162,  222 => 161,  81 => 24,  68 => 14,  64 => 16,  61 => 18,  55 => 10,  49 => 11,  42 => 8,  37 => 6,  33 => 3,  30 => 2,);
     }
 }

@@ -4,3 +4,12 @@ productos_estaticas_naturales:
 productos_estaticas_implantes:
     pattern:  /productos/implantes/{producto}
     defaults: { _controller: ProductoBundle:Default:producto }
+productos_estaticas_aceites:
+    pattern:  /productos/aceites/{producto}
+    defaults: { _controller: ProductoBundle:Default:producto }
+productos_estaticas_equipos:
+    pattern:  /productos/equipos/{producto}
+    defaults: { _controller: ProductoBundle:Default:producto }
+productos_estaticas_cosmeticos:
+    pattern:  /productos/cosmeticos/{producto}
+    defaults: { _controller: ProductoBundle:Default:producto }

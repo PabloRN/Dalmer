@@ -3,6 +3,8 @@
 {{ parent() }}
 <link href="{{ asset('bundles/producto/css/policosanol.css') }}"
 rel="stylesheet" type="text/css"/>
+<link href="{{ asset('bundles/producto/css/jquery-ui.css') }}"
+rel="stylesheet" type="text/css"/>
 {% endblock %}
 {% block title %}Productos-abexol{% endblock %}
 {% block id 'prodpol' %}
@@ -11,30 +13,105 @@ rel="stylesheet" type="text/css"/>
 <h2>Abexol</h2>
 <img class="title" alt="icono carrito" src="{{ asset('bundles/producto/images/carrito.png') }}">
 </div>
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Descripción</a></li>
+        <li><a href="#tabs-2">Patentes</a></li>
+        <li><a href="#tabs-3">Registros</a></li>
+    </ul>
+    <div id="tabs-1">
+
 <img class="prod" alt="Estuche de policosanol" src="{{ asset('bundles/producto/images/abexol.png') }}">
-<h4 class="producto">Acciones</h4> <p>El ABEXOL ha mostrado reducir el daño inducido por el aumento del estrés oxidativo, reduciendo la oxidación lipídica y proteica mediante el aumento de la respuesta antioxidante del organismo. El ABEXOL protege de los efectos perjudiciales del estrés oxidativo y los radicales libres, condiciones asociadas al proceso de envejecimiento y los estados fisiopatológicos asociados. Además, el ABEXOL previene el daño de la mucosa gástrica inducido por agentes nocivos (medicamentos anti-inflamatorios, etanol, stress) al reducir los procesos oxidativos en la mucosa gástrica y aumentando la producción del mucus gástrico soluble, factor defensivo clave de la mucosa gastroduodenal. El ABEXOL ha mostrado mejorar la percepción de salud en sujetos de edad media y en ancianos
-Los efectos antioxidantes del ABEXOL  han sido demostrados en estudios clínicos y experimentales. 
+<h4 class="producto">Acciones</h4> <p>Ha sido demostrado que el ABEXOL incrementa la respuesta <b>antioxidante</b> del organismo, protegiéndolo del <b>estrés oxidativo</b> promotor del envejecimiento y de los estados fisiopatológicos asociados a este proceso. Además, previene el daño de la mucosa gástrica inducido por diferentes agentes al reducir los procesos oxidativos, ejerciendo un moderado efecto citoprotector a este nivel.
 </p>
 <h4 class="producto">Descripción</h4>
-<p>El ABEXOL consiste en una mezcla de 6 alcoholes de alto peso molecular purificada de la cera de abejas, de la cual el principal componente es el triacontanol.</p>
+<p>El ABEXOL consiste en un extracto purificado de cera de abejas cuyos principales componentes son los alcoholes alifáticos superiores, donde el principal componente es el triacotanol</p>
 <h4 class="producto">Composición</h4>
-<p>Cada tableta contiene: Mezcla de alcoholes alifáticos de alto peso molecular	50 mg, Excipientes (mg) csp.
+<p>Cada tableta contiene: Extracto purificado de cera de abejas	50 mg<br> Excipientes(mg):<br> Lactosa 250.0<br>Almidón de maiz 97.5
 </p>
 <h4 class="producto">Indicaciones</h4>
-<p>El ABEXOL se recomienda como suplemento antioxidante, junto con la dieta diaria, con el objetivo de aumentar la respuesta antioxidante del organismo y reducir el impacto del estrés oxidativo. 
-Además, el ABEXOL consumido con la dieta diaria contribuye a proteger la mucosa gástrica del daño inducido por factores agresivos, particularmente en sujetos de edad media y avanzada. 
+<p>El ABEXOL debe ser usado como <b>suplemento nutricional</b> en la dieta diaria, recomendando su uso en personas de mediana y tercera edad, teniendo en cuenta que el proceso de envejecimiento se acompaña de un aumento de los procesos oxidativos condicionantes de la alteración del equilibrio funcional y su consecuente impacto en diferentes sistemas del organismo.
 </p>
-<h4 class="producto">Toxicidad y efectos adeversos</h4>
-<p>Los estudios de la toxicidad a corto y largo plazo del ingrediente activo del ABEXOL (toxicidad aguda, subcrónica, y crónica), y los estudios de genotoxicidad y toxicología de la fertilidad y la reproducción, han mostrado ausencia de toxicidad asociada a su uso. Los estudios clínicos realizados han mostrado que el ABEXOL es seguro y bien tolerado. 
+<h4 class="producto">Toxicología</h4>
+<p>Los resultados de las experiencias preclínicas de toxicología general de corto y largo término, así como los estudios de toxicología especial han mostrado ausencia de toxicidad asociada a su uso tanto a corto como largo plazo.
 </p>
 <h4 class="producto">Consumo</h4>
-<p>Una o dos tabletas diarias, consumidas con almuerzo y comida. No consumir más de 4 tabletas al día.</p>
+<p>Una tableta diaria de 50mg en el horario de la cena.</p>
+<h4 class="producto">Presentación</h4>
+<p>Cajas conteniendo 1, 2, ó 3 blisteres de 10 tabletas cada uno.</p>
 <h4 class="producto">Contraindicaciones</h4>
 <p>Embarazo y lactancia.</p>
 <h4 class="producto">Precausiones</h4>
-<p>No administrar a niños.</p>
+<p><b>No administrar a niños.</b></p>
 <h4 class="producto">Almacenamiento</h4>
 <p>Puede conservarse a temperatura ambiente.</p>
 <h4 class="producto">Vencimiento</h4>
-<p>Cinco  años después de la fecha de fabricación.</p>
+<p>Tres años después de la fecha de fabricación.</p>
+</div>
+<div id="tabs-2">
+<h4 class="producto">Título</h4>
+<p>Una mezcla natural compuesta por alcoholes alifáticos primarios superiores obtenida de la cera de abejas para el tratamiento de la úlceras gástricas y duodenales que presenta también activada antiflamatoria</p>
+<h4 class="producto">Autores</h4>
+<p>Abilio Laguna, Juan Magraner, Rosa M. Más,  Daysi Carvajal, M. Lourdes Arruzazabala, Vivian Molina, Maritza Díaz, Suria Valdés.</p>
+<h4 class="producto">Titular</h4>
+<p>Laboratorios DALMER S.A.</p>
+<table>
+<caption>Paises donde está vigente la patente</caption>
+<thead>
+<tr>
+<th>Pais</th>
+<th>No.Registro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuba</td>
+<td>22412</td>
+</tr>
+<tr>
+<td>Argentina</td>
+<td>AR254557</td>
+</tr>
+<tr>
+<td>Canada</td>
+<td>2`135346</td>
+</tr>
+<tr>
+<td>Estados Unidos</td>
+<td>6 235 795</td>
+</tr>
+<tr>
+<td>Estados Unidos(Divisional)</td>
+<td>6 465 526</td>
+</tr>
+<tr>
+<td>Japón</td>
+<td>2804445</td>
+</tr>
+</tbody>
+</table>
+<p>Registrado como suplemento nutricional. En fase de introducción en el mercado nacional, Guatemala y Bolivia.</p>
+</div>
+<div id="tabs-3">
+<ul class="check">
+<li>Australia (medicina complementaria)</li>
+<li>Japón (alimentos)</li>
+<li>Corea del Sur (nutraceutico) </li>
+<li>Noruega (suplemento nutricional) </li>
+</ul>
+
+</div>
+</div>
+{% endblock %}
+{% block javascripts %}
+  <script>
+  $(document).ready(function() {
+    $("#tabs").tabs({
+	active: 0
+
+	
+	
+	});
+  });
+  </script>
 {% endblock %}
